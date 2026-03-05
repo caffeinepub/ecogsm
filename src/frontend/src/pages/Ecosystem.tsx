@@ -60,7 +60,15 @@ export default function Ecosystem() {
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
           {/* Left content */}
           <div className="flex-1">
-            <p className="text-sm font-bold uppercase tracking-widest text-white/80 mb-4">
+            <p
+              className="uppercase mb-4"
+              style={{
+                color: "#c8972e",
+                fontWeight: 800,
+                fontSize: "16px",
+                letterSpacing: "0.18em",
+              }}
+            >
               THE ECOGSM ECOSYSTEM
             </p>
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
@@ -106,10 +114,10 @@ export default function Ecosystem() {
           <p
             className="uppercase mb-3"
             style={{
-              color: "#b45309",
+              color: "#c8972e",
               fontWeight: 800,
-              fontSize: "14px",
-              letterSpacing: "0.15em",
+              fontSize: "16px",
+              letterSpacing: "0.18em",
             }}
           >
             LAYER 1
@@ -156,10 +164,10 @@ export default function Ecosystem() {
           <p
             className="uppercase mb-3"
             style={{
-              color: "#b45309",
+              color: "#c8972e",
               fontWeight: 800,
-              fontSize: "14px",
-              letterSpacing: "0.15em",
+              fontSize: "16px",
+              letterSpacing: "0.18em",
             }}
           >
             LAYER 2
@@ -195,10 +203,10 @@ export default function Ecosystem() {
           <p
             className="uppercase mb-3"
             style={{
-              color: "#b45309",
+              color: "#c8972e",
               fontWeight: 800,
-              fontSize: "14px",
-              letterSpacing: "0.15em",
+              fontSize: "16px",
+              letterSpacing: "0.18em",
             }}
           >
             LAYER 3
@@ -243,10 +251,10 @@ export default function Ecosystem() {
           <p
             className="uppercase mb-3"
             style={{
-              color: "#b45309",
+              color: "#c8972e",
               fontWeight: 800,
-              fontSize: "14px",
-              letterSpacing: "0.15em",
+              fontSize: "16px",
+              letterSpacing: "0.18em",
             }}
           >
             LAYER 4

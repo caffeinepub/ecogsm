@@ -66,10 +66,10 @@ export default function ForGovernments() {
             <p
               className="uppercase mb-4"
               style={{
-                color: "#b45309",
+                color: "#c8972e",
                 fontWeight: 800,
-                fontSize: "14px",
-                letterSpacing: "0.15em",
+                fontSize: "16px",
+                letterSpacing: "0.18em",
               }}
             >
               FOR GOVERNMENTS

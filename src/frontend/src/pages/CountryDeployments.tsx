@@ -6,7 +6,7 @@ export default function CountryDeployments() {
       title: "EcoGSM Rwanda — Strengthening Primary Care and CHWs",
       focus: [
         "Supporting CHWs with digital tools for household visits",
-        "AI-assisted triage and health education to rural households",
+        "AI health guidance and self-care support to rural households via Morshid",
         "Integration with national digital health initiatives",
       ],
       solutions: "Morshid · CHW Tools · Vospital",
@@ -18,7 +18,7 @@ export default function CountryDeployments() {
       title: "EcoGSM Niger — Schools, Connectivity, and Youth Health",
       focus: [
         "Health education via Etitude to connected schools",
-        "Basic triage for students and teachers via Morshid",
+        "AI health guidance and self-care tips for students and teachers via Morshid",
         "Teleconsultation via Vospital for remote support",
       ],
       solutions: "Etitude · Morshid · Vospital",
@@ -52,7 +52,7 @@ export default function CountryDeployments() {
       title: "EcoGSM Kenya — AI Health & School Programs",
       focus: [
         "Digital-first health in innovation hubs and rural counties",
-        "School health programs and AI triage",
+        "School health programs and AI health guidance via Morshid",
       ],
       solutions: "Morshid · Etitude · Vospital",
       languages: "English · Swahili",
@@ -68,10 +68,10 @@ export default function CountryDeployments() {
             <p
               className="uppercase mb-3"
               style={{
-                color: "#b45309",
+                color: "#c8972e",
                 fontWeight: 800,
-                fontSize: "14px",
-                letterSpacing: "0.15em",
+                fontSize: "16px",
+                letterSpacing: "0.18em",
               }}
             >
               COUNTRY PROGRAMS
@@ -135,10 +135,10 @@ export default function CountryDeployments() {
                   <p
                     className="uppercase mb-2"
                     style={{
-                      color: "#b45309",
+                      color: "#c8972e",
                       fontWeight: 800,
-                      fontSize: "14px",
-                      letterSpacing: "0.15em",
+                      fontSize: "16px",
+                      letterSpacing: "0.18em",
                     }}
                   >
                     Focus
@@ -164,10 +164,10 @@ export default function CountryDeployments() {
                   <span
                     className="uppercase"
                     style={{
-                      color: "#b45309",
+                      color: "#c8972e",
                       fontWeight: 800,
-                      fontSize: "14px",
-                      letterSpacing: "0.15em",
+                      fontSize: "16px",
+                      letterSpacing: "0.18em",
                     }}
                   >
                     Key Solutions:{" "}
@@ -180,10 +180,10 @@ export default function CountryDeployments() {
                   <span
                     className="uppercase"
                     style={{
-                      color: "#b45309",
+                      color: "#c8972e",
                       fontWeight: 800,
-                      fontSize: "14px",
-                      letterSpacing: "0.15em",
+                      fontSize: "16px",
+                      letterSpacing: "0.18em",
                     }}
                   >
                     Languages:{" "}

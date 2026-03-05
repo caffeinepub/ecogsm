@@ -5,7 +5,7 @@ const useCaseCards = [
     scenario:
       "A small rural clinic serves thousands of people with only a handful of nurses and one visiting doctor.",
     helps: [
-      "Morshid provides first-line triage so only high-risk cases queue",
+      "Vospital provides first-line triage and teleconsultations for high-risk cases",
       "Vospital connects the clinic to remote doctors and specialists",
       "CHW tools support home visits for follow-up and vaccinations",
       "TMU Platform tracks service usage and resource needs",
@@ -22,9 +22,7 @@ const useCaseCards = [
     scenario:
       "Public schools host large numbers of children but often lack dedicated health staff.",
     helps: [
-      "Etitude delivers age-appropriate health education",
-      "Morshid provides basic triage and guidance",
-      "Vospital enables scheduled teleconsults when needed",
+      "Etitude delivers health education and Vospital enables teleconsults",
     ],
     impact: [
       "Improved health awareness among students",
@@ -38,9 +36,8 @@ const useCaseCards = [
     scenario:
       "Pregnant women in rural areas face long travel times for antenatal care.",
     helps: [
-      "Morshid provides pregnancy guidance and danger sign alerts",
+      "Vospital provides remote consultations and danger sign alerts",
       "CHWs use tools for home visits and vital sign recording",
-      "Vospital facilitates virtual consultations for high-risk cases",
     ],
     impact: [
       "Increased antenatal and postnatal follow-up",
@@ -71,7 +68,7 @@ const useCaseCards = [
       "Governments need cost-effective extension of health coverage to rural populations.",
     helps: [
       "EcoGSM as national digital entry point for social medicine",
-      "CHWs + telehealth + AI triage working as one system",
+      "CHWs + Vospital telehealth + Etitude education working as one system",
       "Dashboards for health ministry planning and monitoring",
     ],
     impact: [
@@ -123,10 +120,10 @@ export default function UseCases() {
           <p
             className="uppercase mb-4"
             style={{
-              color: "#b45309",
+              color: "#c8972e",
               fontWeight: 800,
-              fontSize: "14px",
-              letterSpacing: "0.15em",
+              fontSize: "16px",
+              letterSpacing: "0.18em",
             }}
           >
             USE CASES &amp; IMPACT
@@ -179,10 +176,10 @@ export default function UseCases() {
                   <p
                     className="uppercase mb-3"
                     style={{
-                      color: "#b45309",
+                      color: "#c8972e",
                       fontWeight: 800,
-                      fontSize: "14px",
-                      letterSpacing: "0.15em",
+                      fontSize: "16px",
+                      letterSpacing: "0.18em",
                     }}
                   >
                     Scenario
@@ -197,10 +194,10 @@ export default function UseCases() {
                   <p
                     className="uppercase mb-3"
                     style={{
-                      color: "#b45309",
+                      color: "#c8972e",
                       fontWeight: 800,
-                      fontSize: "14px",
-                      letterSpacing: "0.15em",
+                      fontSize: "16px",
+                      letterSpacing: "0.18em",
                     }}
                   >
                     How EcoGSM Helps
@@ -228,10 +225,10 @@ export default function UseCases() {
                   <p
                     className="uppercase mb-3"
                     style={{
-                      color: "#b45309",
+                      color: "#c8972e",
                       fontWeight: 800,
-                      fontSize: "14px",
-                      letterSpacing: "0.15em",
+                      fontSize: "16px",
+                      letterSpacing: "0.18em",
                     }}
                   >
                     Impact

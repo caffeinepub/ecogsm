@@ -49,10 +49,10 @@ export default function Solutions() {
 
   /* ── Shared style helpers ───────────────────────────────────── */
   const labelStyle: React.CSSProperties = {
-    color: "#b45309",
+    color: "#c8972e",
     fontWeight: 800,
-    fontSize: "14px",
-    letterSpacing: "0.15em",
+    fontSize: "16px",
+    letterSpacing: "0.18em",
     textTransform: "uppercase",
   };
 
@@ -125,7 +125,7 @@ export default function Solutions() {
                   <li key={item} className="flex items-start gap-3">
                     <span
                       className="mt-1 flex-shrink-0 font-bold"
-                      style={{ color: "#f59e0b" }}
+                      style={{ color: "#c8972e" }}
                     >
                       •
                     </span>
@@ -145,7 +145,7 @@ export default function Solutions() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block px-7 py-3 rounded-full font-semibold text-sm transition-opacity hover:opacity-90"
-                style={{ backgroundColor: "#f59e0b", color: "#0f172a" }}
+                style={{ backgroundColor: "#c8972e", color: "#0f172a" }}
               >
                 Visit www.morshid.ma
               </a>
@@ -204,7 +204,7 @@ export default function Solutions() {
                   <li key={item} className="flex items-start gap-3">
                     <span
                       className="mt-1 flex-shrink-0 font-bold"
-                      style={{ color: "#f59e0b" }}
+                      style={{ color: "#c8972e" }}
                     >
                       •
                     </span>
@@ -270,7 +270,7 @@ export default function Solutions() {
                   <li key={item} className="flex items-start gap-3">
                     <span
                       className="mt-1 flex-shrink-0 font-bold"
-                      style={{ color: "#f59e0b" }}
+                      style={{ color: "#c8972e" }}
                     >
                       •
                     </span>
@@ -285,7 +285,7 @@ export default function Solutions() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block px-7 py-3 rounded-full font-semibold text-sm transition-opacity hover:opacity-90"
-                style={{ backgroundColor: "#f59e0b", color: "#0f172a" }}
+                style={{ backgroundColor: "#c8972e", color: "#0f172a" }}
               >
                 Visit www.etitude.com
               </a>
@@ -343,7 +343,7 @@ export default function Solutions() {
                   <li key={item} className="flex items-start gap-3">
                     <span
                       className="mt-1 flex-shrink-0 font-bold"
-                      style={{ color: "#f59e0b" }}
+                      style={{ color: "#c8972e" }}
                     >
                       •
                     </span>
@@ -404,7 +404,7 @@ export default function Solutions() {
                   <li key={item} className="flex items-start gap-3">
                     <span
                       className="mt-1 flex-shrink-0 font-bold"
-                      style={{ color: "#f59e0b" }}
+                      style={{ color: "#c8972e" }}
                     >
                       •
                     </span>
@@ -460,7 +460,7 @@ export default function Solutions() {
                   <li key={item} className="flex items-start gap-3">
                     <span
                       className="mt-1 flex-shrink-0 font-bold"
-                      style={{ color: "#f59e0b" }}
+                      style={{ color: "#c8972e" }}
                     >
                       •
                     </span>

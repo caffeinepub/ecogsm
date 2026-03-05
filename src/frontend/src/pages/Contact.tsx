@@ -126,10 +126,10 @@ export default function Contact() {
           <p
             className="uppercase mb-3"
             style={{
-              color: "#b45309",
+              color: "#c8972e",
               fontWeight: 800,
-              fontSize: "14px",
-              letterSpacing: "0.15em",
+              fontSize: "16px",
+              letterSpacing: "0.18em",
             }}
           >
             CONTACT
@@ -193,7 +193,7 @@ export default function Contact() {
                     <div>
                       <label
                         className="block text-sm font-semibold mb-1"
-                        style={{ color: "#b45309" }}
+                        style={{ color: "#c8972e" }}
                         htmlFor="fullName"
                       >
                         Full Name
@@ -215,7 +215,7 @@ export default function Contact() {
                     <div>
                       <label
                         className="block text-sm font-semibold mb-1"
-                        style={{ color: "#b45309" }}
+                        style={{ color: "#c8972e" }}
                         htmlFor="organization"
                       >
                         Organization{" "}
@@ -239,7 +239,7 @@ export default function Contact() {
                     <div>
                       <label
                         className="block text-sm font-semibold mb-1"
-                        style={{ color: "#b45309" }}
+                        style={{ color: "#c8972e" }}
                         htmlFor="country"
                       >
                         Country
@@ -266,7 +266,7 @@ export default function Contact() {
                     <div>
                       <label
                         className="block text-sm font-semibold mb-1"
-                        style={{ color: "#b45309" }}
+                        style={{ color: "#c8972e" }}
                         htmlFor="email"
                       >
                         Email Address
@@ -288,7 +288,7 @@ export default function Contact() {
                     <div>
                       <label
                         className="block text-sm font-semibold mb-1"
-                        style={{ color: "#b45309" }}
+                        style={{ color: "#c8972e" }}
                         htmlFor="role"
                       >
                         Role / Capacity
@@ -316,7 +316,7 @@ export default function Contact() {
                     <div>
                       <label
                         className="block text-sm font-semibold mb-1"
-                        style={{ color: "#b45309" }}
+                        style={{ color: "#c8972e" }}
                         htmlFor="areaOfInterest"
                       >
                         Area of Interest
@@ -345,7 +345,7 @@ export default function Contact() {
                     <div>
                       <label
                         className="block text-sm font-semibold mb-1"
-                        style={{ color: "#b45309" }}
+                        style={{ color: "#c8972e" }}
                         htmlFor="message"
                       >
                         Message
@@ -414,10 +414,10 @@ export default function Contact() {
                   <p
                     className="uppercase mb-1"
                     style={{
-                      color: "#b45309",
+                      color: "#c8972e",
                       fontWeight: 800,
-                      fontSize: "14px",
-                      letterSpacing: "0.15em",
+                      fontSize: "16px",
+                      letterSpacing: "0.18em",
                     }}
                   >
                     General Inquiries
@@ -463,10 +463,10 @@ export default function Contact() {
                   <p
                     className="uppercase mb-1"
                     style={{
-                      color: "#b45309",
+                      color: "#c8972e",
                       fontWeight: 800,
-                      fontSize: "14px",
-                      letterSpacing: "0.15em",
+                      fontSize: "16px",
+                      letterSpacing: "0.18em",
                     }}
                   >
                     Partnerships
@@ -512,13 +512,13 @@ export default function Contact() {
                   <p
                     className="uppercase mb-1"
                     style={{
-                      color: "#b45309",
+                      color: "#c8972e",
                       fontWeight: 800,
-                      fontSize: "14px",
-                      letterSpacing: "0.15em",
+                      fontSize: "16px",
+                      letterSpacing: "0.18em",
                     }}
                   >
-                    Media & Press
+                    Media &amp; Press
                   </p>
                   <a
                     href="mailto:media@ecogsm.com"

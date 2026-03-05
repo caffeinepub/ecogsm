@@ -8,10 +8,10 @@ export default function About() {
             <p
               className="uppercase mb-3"
               style={{
-                color: "#b45309",
+                color: "#c8972e",
                 fontWeight: 800,
-                fontSize: "14px",
-                letterSpacing: "0.15em",
+                fontSize: "16px",
+                letterSpacing: "0.18em",
               }}
             >
               ABOUT ECOGSM
@@ -99,10 +99,10 @@ export default function About() {
           <p
             className="uppercase mb-3"
             style={{
-              color: "#b45309",
+              color: "#c8972e",
               fontWeight: 800,
-              fontSize: "14px",
-              letterSpacing: "0.15em",
+              fontSize: "16px",
+              letterSpacing: "0.18em",
             }}
           >
             THE REALITY
@@ -238,7 +238,7 @@ export default function About() {
             style={{
               backgroundColor: "#ffffff",
               border: "1px solid #e2e8f0",
-              borderLeft: "3px solid #f59e0b",
+              borderLeft: "3px solid #c8972e",
               borderRadius: "12px",
             }}
           >

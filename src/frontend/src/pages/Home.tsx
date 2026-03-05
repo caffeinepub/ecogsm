@@ -172,10 +172,10 @@ function WhyEcoGSM() {
           <p
             className="uppercase mb-4"
             style={{
-              color: "#b45309",
+              color: "#c8972e",
               fontWeight: 800,
-              fontSize: "14px",
-              letterSpacing: "0.15em",
+              fontSize: "16px",
+              letterSpacing: "0.18em",
             }}
           >
             The Challenge
@@ -252,10 +252,10 @@ function WhoItServes() {
           <p
             className="uppercase mb-4"
             style={{
-              color: "#b45309",
+              color: "#c8972e",
               fontWeight: 800,
-              fontSize: "14px",
-              letterSpacing: "0.15em",
+              fontSize: "16px",
+              letterSpacing: "0.18em",
             }}
           >
             Who It Serves
@@ -298,34 +298,34 @@ function WhoItServes() {
 
 const solutionCards = [
   {
-    icon: "🤖",
+    icon: "🌾",
     title: "Morshid",
-    text: "AI health assistant for triage and guidance, 24/7 multilingual.",
+    text: "AI-powered agricultural advisor connecting Moroccan farmers to markets, knowledge, and smart farming tools.",
   },
   {
-    icon: "📡",
-    title: "Vospital",
-    text: "Virtual hospital for teleconsultations and specialist referrals.",
+    icon: "🏥",
+    title: "Vospital.Care",
+    text: "Virtual hospital connecting doctors and patients remotely via video, AI bots, and real-time translation.",
   },
   {
     icon: "📚",
     title: "Etitude",
-    text: "Health education for schools, communities and CHWs.",
+    text: "eLearning platform democratizing education — breaking barriers and ensuring equity for learners everywhere.",
+  },
+  {
+    icon: "🤖",
+    title: "Airello",
+    text: "Multi-AI-Agents platform enabling intelligent automation and workflow orchestration across the TMU ecosystem.",
   },
   {
     icon: "🏘️",
     title: "CHW Tools",
-    text: "Digital toolkit for community health workers.",
-  },
-  {
-    icon: "⌨️",
-    title: "TMU-KL",
-    text: "Predictive text for African and regional languages.",
+    text: "Digital toolkit for community health workers — visits, referrals, data collection, and AI-assisted guidance.",
   },
   {
     icon: "⚙️",
     title: "TMU Platform",
-    text: "Secure backbone: identity, payments, APIs, monitoring.",
+    text: "Secure digital backbone: identity, payments, $TMU token rails, APIs, and monitoring dashboards.",
   },
 ];
 
@@ -337,10 +337,10 @@ function SolutionsPreview() {
           <p
             className="uppercase mb-4"
             style={{
-              color: "#b45309",
+              color: "#c8972e",
               fontWeight: 800,
-              fontSize: "14px",
-              letterSpacing: "0.15em",
+              fontSize: "16px",
+              letterSpacing: "0.18em",
             }}
           >
             Our Solutions
@@ -410,10 +410,10 @@ function Countries() {
         <p
           className="uppercase mb-4"
           style={{
-            color: "#b45309",
+            color: "#c8972e",
             fontWeight: 800,
-            fontSize: "14px",
-            letterSpacing: "0.15em",
+            fontSize: "16px",
+            letterSpacing: "0.18em",
           }}
         >
           Country Programs
