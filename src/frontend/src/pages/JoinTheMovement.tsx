@@ -1,3 +1,174 @@
 export default function JoinTheMovement() {
-  return <div />;
+  const stakeholderCards = [
+    {
+      icon: "🙋",
+      title: "For Individuals and Community Leaders",
+      bullets: [
+        "Become a digital health ambassador in your community",
+        "Use EcoGSM tools to manage your family's wellbeing",
+        "Help spread accurate health information",
+        "Participate in pilots and give feedback",
+      ],
+    },
+    {
+      icon: "👩‍⚕️",
+      title: "For Health Workers and CHWs",
+      bullets: [
+        "Adopt EcoGSM tools to support your daily work",
+        "Join training programs and contribute to improving the tools",
+        "Serve as local champions bringing digital health to communities",
+      ],
+    },
+    {
+      icon: "🏢",
+      title: "For Clinics, NGOs, and Institutions",
+      bullets: [
+        "Integrate EcoGSM solutions into your service delivery",
+        "Co-design programs for specific health challenges",
+        "Partner on research, evaluation, and innovation",
+      ],
+    },
+    {
+      icon: "🏛️",
+      title: "For Governments and Public Institutions",
+      bullets: [
+        "Explore EcoGSM as part of your national digital health strategy",
+        "Run pilots in targeted districts or populations",
+        "Align with your broader digital public infrastructure",
+      ],
+    },
+    {
+      icon: "💼",
+      title: "For Investors, Donors, and Philanthropists",
+      bullets: [
+        "Support EcoGSM country programs and infrastructure",
+        "Participate in innovative financing tied to measurable outcomes",
+        "Help unlock sustainable models for global social medicine",
+      ],
+    },
+  ];
+
+  return (
+    <div>
+      {/* SECTION 1: HERO */}
+      <section
+        data-ocid="join.hero.section"
+        style={{ backgroundColor: "#0d6e6e" }}
+        className="py-24 px-6"
+      >
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+            Join the EcoGSM Movement
+          </h1>
+          <p
+            className="text-lg md:text-xl leading-relaxed max-w-3xl mx-auto"
+            style={{ color: "rgba(255,255,255,0.88)" }}
+          >
+            EcoGSM is more than a set of tools — it is a movement toward fair,
+            accessible, and sustainable social medicine. There are many ways to
+            participate, depending on who you are and what you do.
+          </p>
+        </div>
+      </section>
+
+      {/* SECTION 2: STAKEHOLDER CARDS */}
+      <section
+        data-ocid="join.stakeholders.section"
+        style={{ backgroundColor: "#e6f4f4" }}
+        className="py-20 px-6"
+      >
+        <div className="max-w-6xl mx-auto">
+          <p
+            className="text-sm font-semibold uppercase tracking-widest text-center mb-10"
+            style={{ color: "#c8972e" }}
+          >
+            WHO CAN JOIN
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-items-center">
+            {stakeholderCards.map((card, i) => (
+              <div
+                key={card.title}
+                data-ocid={`join.stakeholder.card.${i + 1}`}
+                className={`bg-white rounded-xl shadow-sm p-8 w-full flex flex-col items-start${
+                  i === 4 ? " md:col-span-2 md:max-w-lg md:mx-auto" : ""
+                }`}
+              >
+                {/* Icon circle */}
+                <div
+                  className="w-14 h-14 rounded-full flex items-center justify-center text-2xl mb-5 flex-shrink-0"
+                  style={{ backgroundColor: "#0d6e6e" }}
+                >
+                  {card.icon}
+                </div>
+
+                {/* Title */}
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  {card.title}
+                </h3>
+
+                {/* Bullet list */}
+                <ul className="space-y-2.5">
+                  {card.bullets.map((bullet) => (
+                    <li key={bullet} className="flex items-start gap-3">
+                      <span
+                        className="mt-0.5 flex-shrink-0 font-bold text-base leading-none"
+                        style={{ color: "#0d6e6e" }}
+                      >
+                        •
+                      </span>
+                      <span className="text-gray-700 text-base leading-relaxed">
+                        {bullet}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 3: CTA */}
+      <section
+        data-ocid="join.cta.section"
+        style={{ backgroundColor: "#c8972e" }}
+        className="py-16 px-6"
+      >
+        <div className="max-w-3xl mx-auto text-center">
+          <h2
+            className="text-3xl md:text-4xl font-bold mb-5"
+            style={{ color: "#1a2e2e" }}
+          >
+            Let's Take the Next Step Together
+          </h2>
+          <p
+            className="text-base md:text-lg leading-relaxed mb-10"
+            style={{ color: "#1a2e2e" }}
+          >
+            Tell us who you are, what you do, and how you'd like to contribute —
+            and we'll propose concrete next steps.
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a
+              href="/contact"
+              data-ocid="join.introduce_yourself.button"
+              className="px-6 py-3 rounded-lg font-semibold text-white transition-opacity hover:opacity-90 text-base"
+              style={{ backgroundColor: "#094f4f" }}
+            >
+              Introduce Yourself
+            </a>
+            <a
+              href="/contact"
+              data-ocid="join.strategy_call.button"
+              className="px-6 py-3 rounded-lg font-semibold transition-opacity hover:opacity-90 text-base"
+              style={{ backgroundColor: "white", color: "#1a2e2e" }}
+            >
+              Request a Strategy Call
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
 }
