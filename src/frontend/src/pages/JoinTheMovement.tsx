@@ -53,7 +53,7 @@ export default function JoinTheMovement() {
       {/* SECTION 1: HERO */}
       <section
         data-ocid="join.hero.section"
-        style={{ backgroundColor: "#0d6e6e" }}
+        style={{ backgroundColor: "#0f766e" }}
         className="py-24 px-6"
       >
         <div className="max-w-4xl mx-auto text-center">
@@ -74,13 +74,18 @@ export default function JoinTheMovement() {
       {/* SECTION 2: STAKEHOLDER CARDS */}
       <section
         data-ocid="join.stakeholders.section"
-        style={{ backgroundColor: "#e6f4f4" }}
+        style={{ backgroundColor: "#f0fdf9" }}
         className="py-20 px-6"
       >
         <div className="max-w-6xl mx-auto">
           <p
-            className="text-sm font-semibold uppercase tracking-widest text-center mb-10"
-            style={{ color: "#c8972e" }}
+            className="uppercase text-center mb-10"
+            style={{
+              color: "#b45309",
+              fontWeight: 800,
+              fontSize: "14px",
+              letterSpacing: "0.15em",
+            }}
           >
             WHO CAN JOIN
           </p>
@@ -90,14 +95,20 @@ export default function JoinTheMovement() {
               <div
                 key={card.title}
                 data-ocid={`join.stakeholder.card.${i + 1}`}
-                className={`bg-white rounded-xl shadow-sm p-8 w-full flex flex-col items-start${
+                className={`rounded-xl p-8 w-full flex flex-col items-start${
                   i === 4 ? " md:col-span-2 md:max-w-lg md:mx-auto" : ""
                 }`}
+                style={{
+                  backgroundColor: "#ffffff",
+                  border: "1px solid #e2e8f0",
+                  borderLeft: "3px solid #0f766e",
+                  borderRadius: "12px",
+                }}
               >
                 {/* Icon circle */}
                 <div
                   className="w-14 h-14 rounded-full flex items-center justify-center text-2xl mb-5 flex-shrink-0"
-                  style={{ backgroundColor: "#0d6e6e" }}
+                  style={{ backgroundColor: "#0f766e" }}
                 >
                   {card.icon}
                 </div>
@@ -113,7 +124,7 @@ export default function JoinTheMovement() {
                     <li key={bullet} className="flex items-start gap-3">
                       <span
                         className="mt-0.5 flex-shrink-0 font-bold text-base leading-none"
-                        style={{ color: "#0d6e6e" }}
+                        style={{ color: "#0f766e" }}
                       >
                         •
                       </span>
@@ -153,7 +164,7 @@ export default function JoinTheMovement() {
             <a
               href="/contact"
               data-ocid="join.introduce_yourself.button"
-              className="px-6 py-3 rounded-lg font-semibold text-white transition-opacity hover:opacity-90 text-base"
+              className="px-6 py-3 rounded-full font-semibold text-white transition-opacity hover:opacity-90 text-base"
               style={{ backgroundColor: "#094f4f" }}
             >
               Introduce Yourself
@@ -161,7 +172,7 @@ export default function JoinTheMovement() {
             <a
               href="/contact"
               data-ocid="join.strategy_call.button"
-              className="px-6 py-3 rounded-lg font-semibold transition-opacity hover:opacity-90 text-base"
+              className="px-6 py-3 rounded-full font-semibold transition-opacity hover:opacity-90 text-base"
               style={{ backgroundColor: "white", color: "#1a2e2e" }}
             >
               Request a Strategy Call

@@ -62,12 +62,17 @@ export default function CountryDeployments() {
   return (
     <div>
       {/* SECTION 1: HERO */}
-      <section style={{ background: "#0d6e6e" }} className="py-20 px-6">
+      <section style={{ background: "#0f766e" }} className="py-20 px-6">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
           <div className="flex-1 text-white">
             <p
-              style={{ color: "#c8972e" }}
-              className="text-xs font-bold uppercase tracking-widest mb-3"
+              className="uppercase mb-3"
+              style={{
+                color: "#b45309",
+                fontWeight: 800,
+                fontSize: "14px",
+                letterSpacing: "0.15em",
+              }}
             >
               COUNTRY PROGRAMS
             </p>
@@ -91,14 +96,19 @@ export default function CountryDeployments() {
       </section>
 
       {/* SECTION 2: COUNTRY CARDS */}
-      <section style={{ background: "#e6f4f4" }} className="py-20 px-6">
+      <section style={{ background: "#f0fdf9" }} className="py-20 px-6">
         <div className="max-w-5xl mx-auto flex flex-col gap-8">
           {countries.map((c, i) => (
             <div
               key={c.country}
               data-ocid={`country.card.${i + 1}`}
-              className="bg-white rounded-2xl shadow-sm overflow-hidden flex flex-col md:flex-row"
-              style={{ borderLeft: "5px solid #0d6e6e" }}
+              className="overflow-hidden flex flex-col md:flex-row"
+              style={{
+                backgroundColor: "#ffffff",
+                border: "1px solid #e2e8f0",
+                borderLeft: "3px solid #0f766e",
+                borderRadius: "12px",
+              }}
             >
               <div className="p-8 flex-1">
                 {/* Flag + Country */}
@@ -106,7 +116,7 @@ export default function CountryDeployments() {
                   <span className="text-5xl leading-none">{c.flag}</span>
                   <span
                     className="text-sm font-bold uppercase tracking-widest"
-                    style={{ color: "#0d6e6e" }}
+                    style={{ color: "#0f766e" }}
                   >
                     {c.country}
                   </span>
@@ -123,8 +133,13 @@ export default function CountryDeployments() {
                 {/* Focus */}
                 <div className="mb-4">
                   <p
-                    className="text-xs font-bold uppercase tracking-widest mb-2"
-                    style={{ color: "#c8972e" }}
+                    className="uppercase mb-2"
+                    style={{
+                      color: "#b45309",
+                      fontWeight: 800,
+                      fontSize: "14px",
+                      letterSpacing: "0.15em",
+                    }}
                   >
                     Focus
                   </p>
@@ -136,7 +151,7 @@ export default function CountryDeployments() {
                       >
                         <span
                           className="mt-1 w-1.5 h-1.5 rounded-full flex-shrink-0"
-                          style={{ background: "#0d6e6e" }}
+                          style={{ background: "#0f766e" }}
                         />
                         {point}
                       </li>
@@ -147,8 +162,13 @@ export default function CountryDeployments() {
                 {/* Key Solutions */}
                 <div className="mb-2">
                   <span
-                    className="text-xs font-bold uppercase tracking-widest"
-                    style={{ color: "#c8972e" }}
+                    className="uppercase"
+                    style={{
+                      color: "#b45309",
+                      fontWeight: 800,
+                      fontSize: "14px",
+                      letterSpacing: "0.15em",
+                    }}
                   >
                     Key Solutions:{" "}
                   </span>
@@ -158,8 +178,13 @@ export default function CountryDeployments() {
                 {/* Languages */}
                 <div>
                   <span
-                    className="text-xs font-bold uppercase tracking-widest"
-                    style={{ color: "#c8972e" }}
+                    className="uppercase"
+                    style={{
+                      color: "#b45309",
+                      fontWeight: 800,
+                      fontSize: "14px",
+                      letterSpacing: "0.15em",
+                    }}
                   >
                     Languages:{" "}
                   </span>

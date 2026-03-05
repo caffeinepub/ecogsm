@@ -57,8 +57,13 @@ export default function Technology() {
           {/* Left: text */}
           <div className="flex-1">
             <p
-              className="text-sm font-bold uppercase tracking-widest mb-4"
-              style={{ color: "#c8972e" }}
+              className="uppercase mb-4"
+              style={{
+                color: "#b45309",
+                fontWeight: 800,
+                fontSize: "14px",
+                letterSpacing: "0.15em",
+              }}
             >
               TECHNOLOGY
             </p>
@@ -90,7 +95,7 @@ export default function Technology() {
       {/* SECTION 2: AI SECTION */}
       <section
         data-ocid="tech.ai.section"
-        style={{ backgroundColor: "#e6f4f4" }}
+        style={{ backgroundColor: "#f0fdf9" }}
         className="py-20 px-6"
       >
         <div className="max-w-6xl mx-auto">
@@ -100,12 +105,17 @@ export default function Technology() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Column 1: AI provides */}
             <div
-              className="bg-white rounded-2xl p-8 shadow-sm"
-              style={{ borderLeft: "4px solid #0d6e6e" }}
+              className="p-8"
+              style={{
+                backgroundColor: "#ffffff",
+                border: "1px solid #e2e8f0",
+                borderLeft: "3px solid #0f766e",
+                borderRadius: "12px",
+              }}
             >
               <h3
                 className="text-xl font-bold mb-6"
-                style={{ color: "#0d6e6e" }}
+                style={{ color: "#0f766e" }}
               >
                 AI provides:
               </h3>
@@ -114,7 +124,7 @@ export default function Technology() {
                   <li key={item} className="flex items-start gap-3">
                     <span
                       className="mt-0.5 flex-shrink-0 font-bold text-lg"
-                      style={{ color: "#0d6e6e" }}
+                      style={{ color: "#0f766e" }}
                     >
                       ✔
                     </span>
@@ -126,12 +136,17 @@ export default function Technology() {
 
             {/* Column 2: We ensure */}
             <div
-              className="bg-white rounded-2xl p-8 shadow-sm"
-              style={{ borderLeft: "4px solid #0d6e6e" }}
+              className="p-8"
+              style={{
+                backgroundColor: "#ffffff",
+                border: "1px solid #e2e8f0",
+                borderLeft: "3px solid #0f766e",
+                borderRadius: "12px",
+              }}
             >
               <h3
                 className="text-xl font-bold mb-6"
-                style={{ color: "#0d6e6e" }}
+                style={{ color: "#0f766e" }}
               >
                 We ensure:
               </h3>
@@ -140,7 +155,7 @@ export default function Technology() {
                   <li key={item} className="flex items-start gap-3">
                     <span
                       className="mt-0.5 flex-shrink-0 font-bold text-lg"
-                      style={{ color: "#0d6e6e" }}
+                      style={{ color: "#0f766e" }}
                     >
                       ✔
                     </span>
@@ -156,7 +171,7 @@ export default function Technology() {
       {/* SECTION 3: CORE TECHNOLOGIES */}
       <section
         data-ocid="tech.core.section"
-        style={{ backgroundColor: "#0d6e6e" }}
+        style={{ backgroundColor: "#0f766e" }}
         className="py-20 px-6"
       >
         <div className="max-w-6xl mx-auto">
@@ -183,7 +198,7 @@ export default function Technology() {
       {/* SECTION 4: ARCHITECTURE PRINCIPLES */}
       <section
         data-ocid="tech.architecture.section"
-        style={{ backgroundColor: "#e6f4f4" }}
+        style={{ backgroundColor: "#f0fdf9" }}
         className="py-20 px-6"
       >
         <div className="max-w-6xl mx-auto">
@@ -195,12 +210,17 @@ export default function Technology() {
               <div
                 key={card.num}
                 data-ocid={`tech.architecture.card.${i + 1}`}
-                className="bg-white rounded-2xl p-7 shadow-sm relative"
-                style={{ borderLeft: "4px solid #0d6e6e" }}
+                className="p-7 relative"
+                style={{
+                  backgroundColor: "#ffffff",
+                  border: "1px solid #e2e8f0",
+                  borderLeft: "3px solid #0f766e",
+                  borderRadius: "12px",
+                }}
               >
                 <span
                   className="w-9 h-9 rounded-full flex items-center justify-center font-bold text-white text-sm mb-5 inline-flex"
-                  style={{ backgroundColor: "#0d6e6e" }}
+                  style={{ backgroundColor: "#0f766e" }}
                 >
                   {card.num}
                 </span>

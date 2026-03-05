@@ -56,7 +56,7 @@ export default function ForPartners() {
       {/* SECTION 1: HERO */}
       <section
         data-ocid="partners.hero.section"
-        style={{ backgroundColor: "#e6f4f4" }}
+        style={{ backgroundColor: "#f0fdf9" }}
         className="py-20 px-6"
       >
         <div className="max-w-5xl mx-auto flex flex-row items-stretch gap-8">
@@ -66,15 +66,20 @@ export default function ForPartners() {
             style={{
               width: "4px",
               minHeight: "80px",
-              backgroundColor: "#c8972e",
+              backgroundColor: "#f59e0b",
               alignSelf: "stretch",
             }}
           />
           {/* Text block */}
           <div className="flex-1">
             <p
-              className="text-sm font-bold uppercase tracking-widest mb-4"
-              style={{ color: "#c8972e" }}
+              className="uppercase mb-4"
+              style={{
+                color: "#b45309",
+                fontWeight: 800,
+                fontSize: "14px",
+                letterSpacing: "0.15em",
+              }}
             >
               FOR PARTNERS &amp; NGOs
             </p>
@@ -93,7 +98,7 @@ export default function ForPartners() {
       {/* SECTION 2: WHO WE PARTNER WITH */}
       <section
         data-ocid="partners.who.section"
-        style={{ backgroundColor: "#0d6e6e" }}
+        style={{ backgroundColor: "#0f766e" }}
         className="py-20 px-6"
       >
         <div className="max-w-5xl mx-auto">
@@ -106,7 +111,7 @@ export default function ForPartners() {
                 key={badge}
                 data-ocid={`partners.who.badge.${i + 1}`}
                 className="px-5 py-2 rounded-full font-semibold text-sm"
-                style={{ backgroundColor: "white", color: "#0d6e6e" }}
+                style={{ backgroundColor: "white", color: "#0f766e" }}
               >
                 {badge}
               </span>
@@ -118,7 +123,7 @@ export default function ForPartners() {
       {/* SECTION 3: WHY PARTNER */}
       <section
         data-ocid="partners.why.section"
-        style={{ backgroundColor: "#e6f4f4" }}
+        style={{ backgroundColor: "#f0fdf9" }}
         className="py-20 px-6"
       >
         <div className="max-w-6xl mx-auto">
@@ -130,8 +135,13 @@ export default function ForPartners() {
               <div
                 key={card.title}
                 data-ocid={`partners.why.card.${i + 1}`}
-                className="bg-white rounded-2xl p-7 shadow-sm"
-                style={{ borderLeft: "4px solid #0d6e6e" }}
+                className="p-7"
+                style={{
+                  backgroundColor: "#ffffff",
+                  border: "1px solid #e2e8f0",
+                  borderLeft: "3px solid #0f766e",
+                  borderRadius: "12px",
+                }}
               >
                 <span className="text-5xl mb-5 block">{card.icon}</span>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
@@ -147,7 +157,7 @@ export default function ForPartners() {
       {/* SECTION 4: PARTNERSHIP MODELS */}
       <section
         data-ocid="partners.models.section"
-        style={{ backgroundColor: "#0d6e6e" }}
+        style={{ backgroundColor: "#0f766e" }}
         className="py-20 px-6"
       >
         <div className="max-w-6xl mx-auto">
@@ -190,7 +200,7 @@ export default function ForPartners() {
             <a
               href="/contact"
               data-ocid="partners.cta.primary_button"
-              className="px-8 py-4 rounded-xl font-semibold transition-opacity hover:opacity-90 text-base"
+              className="px-8 py-4 rounded-full font-semibold transition-opacity hover:opacity-90 text-base"
               style={{ backgroundColor: "#c8972e", color: "#1a2e2e" }}
             >
               Discuss a Partnership
@@ -198,7 +208,7 @@ export default function ForPartners() {
             <a
               href="/contact"
               data-ocid="partners.cta.secondary_button"
-              className="px-8 py-4 rounded-xl font-semibold transition-opacity hover:opacity-90 text-base border-2 border-white text-white"
+              className="px-8 py-4 rounded-full font-semibold transition-opacity hover:opacity-90 text-base border-2 border-white text-white"
               style={{ backgroundColor: "transparent" }}
             >
               Download Partner Brief (PDF)

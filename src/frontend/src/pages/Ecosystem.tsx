@@ -54,7 +54,7 @@ export default function Ecosystem() {
       {/* SECTION 1: HERO */}
       <section
         data-ocid="ecosystem.hero.section"
-        style={{ backgroundColor: "#0d6e6e" }}
+        style={{ backgroundColor: "#0f766e" }}
         className="py-20 px-6"
       >
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
@@ -88,7 +88,7 @@ export default function Ecosystem() {
           {/* Right: diagram image */}
           <div className="flex-1 flex justify-center">
             <img
-              src="/assets/generated/ecosystem-layers-diagram.dim_800x500.png"
+              src="/assets/generated/ecosystem-hero-layers.dim_800x600.jpg"
               alt="EcoGSM four-layer ecosystem diagram"
               className="rounded-2xl shadow-2xl w-full max-w-lg object-cover"
             />
@@ -99,12 +99,18 @@ export default function Ecosystem() {
       {/* SECTION 2: LAYER 1 — Health Access */}
       <section
         data-ocid="ecosystem.layer1.section"
-        className="py-20 px-6 bg-white"
+        className="py-20 px-6"
+        style={{ backgroundColor: "#f8fafc" }}
       >
         <div className="max-w-5xl mx-auto">
           <p
-            className="text-sm font-bold uppercase tracking-widest mb-3"
-            style={{ color: "#0d6e6e" }}
+            className="uppercase mb-3"
+            style={{
+              color: "#b45309",
+              fontWeight: 800,
+              fontSize: "14px",
+              letterSpacing: "0.15em",
+            }}
           >
             LAYER 1
           </p>
@@ -115,7 +121,13 @@ export default function Ecosystem() {
             {layer1Features.map((item) => (
               <div
                 key={item.text}
-                className="flex items-start gap-4 p-5 rounded-xl border border-gray-100 shadow-sm bg-white hover:shadow-md transition-shadow"
+                className="flex items-start gap-4 p-5 transition-shadow"
+                style={{
+                  backgroundColor: "#ffffff",
+                  border: "1px solid #e2e8f0",
+                  borderLeft: "3px solid #0f766e",
+                  borderRadius: "12px",
+                }}
               >
                 <span className="text-3xl flex-shrink-0">{item.icon}</span>
                 <p className="text-gray-700 font-medium leading-snug">
@@ -126,7 +138,7 @@ export default function Ecosystem() {
           </div>
           <p
             className="text-base font-medium italic"
-            style={{ color: "#0d6e6e" }}
+            style={{ color: "#0f766e" }}
           >
             Accessible via smartphones, school/clinic terminals, and CHW
             devices.
@@ -137,13 +149,18 @@ export default function Ecosystem() {
       {/* SECTION 3: LAYER 2 — Provider Enablement */}
       <section
         data-ocid="ecosystem.layer2.section"
-        style={{ backgroundColor: "#e6f4f4" }}
+        style={{ backgroundColor: "#f0fdf9" }}
         className="py-20 px-6"
       >
         <div className="max-w-5xl mx-auto">
           <p
-            className="text-sm font-bold uppercase tracking-widest mb-3"
-            style={{ color: "#0d6e6e" }}
+            className="uppercase mb-3"
+            style={{
+              color: "#b45309",
+              fontWeight: 800,
+              fontSize: "14px",
+              letterSpacing: "0.15em",
+            }}
           >
             LAYER 2
           </p>
@@ -155,7 +172,7 @@ export default function Ecosystem() {
               <div key={item} className="flex items-start gap-3">
                 <span
                   className="mt-1 flex-shrink-0 font-bold text-lg"
-                  style={{ color: "#0d6e6e" }}
+                  style={{ color: "#0f766e" }}
                 >
                   ✔
                 </span>
@@ -171,12 +188,18 @@ export default function Ecosystem() {
       {/* SECTION 4: LAYER 3 — Infrastructure & Logistics */}
       <section
         data-ocid="ecosystem.layer3.section"
-        className="py-20 px-6 bg-white"
+        className="py-20 px-6"
+        style={{ backgroundColor: "#f8fafc" }}
       >
         <div className="max-w-5xl mx-auto">
           <p
-            className="text-sm font-bold uppercase tracking-widest mb-3"
-            style={{ color: "#0d6e6e" }}
+            className="uppercase mb-3"
+            style={{
+              color: "#b45309",
+              fontWeight: 800,
+              fontSize: "14px",
+              letterSpacing: "0.15em",
+            }}
           >
             LAYER 3
           </p>
@@ -192,7 +215,13 @@ export default function Ecosystem() {
             {layer3Items.map((item) => (
               <div
                 key={item.text}
-                className="flex items-start gap-4 p-5 rounded-xl border border-gray-100 shadow-sm bg-white hover:shadow-md transition-shadow"
+                className="flex items-start gap-4 p-5 transition-shadow"
+                style={{
+                  backgroundColor: "#ffffff",
+                  border: "1px solid #e2e8f0",
+                  borderLeft: "3px solid #0f766e",
+                  borderRadius: "12px",
+                }}
               >
                 <span className="text-3xl flex-shrink-0">{item.icon}</span>
                 <p className="text-gray-700 font-medium leading-snug">
@@ -212,8 +241,13 @@ export default function Ecosystem() {
       >
         <div className="max-w-5xl mx-auto">
           <p
-            className="text-sm font-bold uppercase tracking-widest mb-3"
-            style={{ color: "#c8972e" }}
+            className="uppercase mb-3"
+            style={{
+              color: "#b45309",
+              fontWeight: 800,
+              fontSize: "14px",
+              letterSpacing: "0.15em",
+            }}
           >
             LAYER 4
           </p>

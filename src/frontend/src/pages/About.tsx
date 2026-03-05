@@ -2,12 +2,17 @@ export default function About() {
   return (
     <div>
       {/* SECTION 1: HERO */}
-      <section style={{ backgroundColor: "#e6f4f4" }} className="py-20 px-6">
+      <section style={{ backgroundColor: "#f0fdf9" }} className="py-20 px-6">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
           <div className="flex-1">
             <p
-              className="text-sm font-bold uppercase tracking-widest mb-3"
-              style={{ color: "#c8972e" }}
+              className="uppercase mb-3"
+              style={{
+                color: "#b45309",
+                fontWeight: 800,
+                fontSize: "14px",
+                letterSpacing: "0.15em",
+              }}
             >
               ABOUT ECOGSM
             </p>
@@ -23,8 +28,8 @@ export default function About() {
           </div>
           <div className="flex-1 flex justify-center">
             <img
-              src="/assets/generated/about-hero.dim_800x600.jpg"
-              alt="Community health worker showing a tablet to a family in a rural African setting"
+              src="/assets/generated/about-hero-family.dim_800x600.jpg"
+              alt="African family with a community health worker showing them a tablet in a rural setting"
               className="rounded-2xl shadow-lg w-full max-w-md object-cover"
             />
           </div>
@@ -32,7 +37,7 @@ export default function About() {
       </section>
 
       {/* SECTION 2: WHAT IT COMBINES */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-20 px-6" style={{ backgroundColor: "#f8fafc" }}>
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-gray-900 mb-8">
             EcoGSM combines:
@@ -49,7 +54,7 @@ export default function About() {
               <li key={item} className="flex items-start gap-3">
                 <span
                   className="mt-1 flex-shrink-0 font-bold text-lg"
-                  style={{ color: "#0d6e6e" }}
+                  style={{ color: "#0f766e" }}
                 >
                   ✔
                 </span>
@@ -89,11 +94,16 @@ export default function About() {
       </section>
 
       {/* SECTION 4: THE PROBLEM */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-20 px-6" style={{ backgroundColor: "#f8fafc" }}>
         <div className="max-w-5xl mx-auto">
           <p
-            className="text-sm font-bold uppercase tracking-widest mb-3"
-            style={{ color: "#c8972e" }}
+            className="uppercase mb-3"
+            style={{
+              color: "#b45309",
+              fontWeight: 800,
+              fontSize: "14px",
+              letterSpacing: "0.15em",
+            }}
           >
             THE REALITY
           </p>
@@ -110,7 +120,13 @@ export default function About() {
             ].map((text) => (
               <div
                 key={text}
-                className="flex items-start gap-4 p-5 rounded-xl border border-gray-200 shadow-sm"
+                className="flex items-start gap-4 p-5"
+                style={{
+                  backgroundColor: "#ffffff",
+                  border: "1px solid #e2e8f0",
+                  borderLeft: "3px solid #0f766e",
+                  borderRadius: "12px",
+                }}
               >
                 <span className="text-2xl flex-shrink-0">⚠️</span>
                 <p className="text-gray-700 font-medium">{text}</p>
@@ -121,58 +137,77 @@ export default function About() {
       </section>
 
       {/* SECTION 5: OUR APPROACH */}
-      <section style={{ backgroundColor: "#e6f4f4" }} className="py-20 px-6">
-        <div className="max-w-5xl mx-auto">
+      <section style={{ backgroundColor: "#f0fdf9" }} className="py-20 px-6">
+        <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-gray-900 mb-10 text-center">
             Our Approach to Social Medicine
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {[
-              {
-                num: "1",
-                title: "Technology as an Enabler",
-                text: "We design tools to augment, not replace, human caregivers and local health systems.",
-              },
-              {
-                num: "2",
-                title: "Local Context First",
-                text: "Adapted to local languages, culture, and regulations, deployed with local partners.",
-              },
-              {
-                num: "3",
-                title: "Sustainable Financing",
-                text: "Tokenized incentives and results-based financing to scale beyond pilot projects.",
-              },
-              {
-                num: "4",
-                title: "Interoperability & DPI",
-                text: "Built to integrate with existing national identity, payment, and health systems.",
-              },
-            ].map((card) => (
-              <div
-                key={card.num}
-                className="bg-white rounded-xl p-6 shadow-sm flex gap-4 items-start"
-              >
-                <span
-                  className="flex-shrink-0 w-9 h-9 rounded-full flex items-center justify-center font-bold text-white text-sm"
-                  style={{ backgroundColor: "#0d6e6e" }}
+          <div className="flex flex-col md:flex-row items-start gap-12">
+            {/* Left: numbered cards */}
+            <div className="flex-1 grid grid-cols-1 gap-6">
+              {[
+                {
+                  num: "1",
+                  title: "Technology as an Enabler",
+                  text: "We design tools to augment, not replace, human caregivers and local health systems.",
+                },
+                {
+                  num: "2",
+                  title: "Local Context First",
+                  text: "Adapted to local languages, culture, and regulations, deployed with local partners.",
+                },
+                {
+                  num: "3",
+                  title: "Sustainable Financing",
+                  text: "Tokenized incentives and results-based financing to scale beyond pilot projects.",
+                },
+                {
+                  num: "4",
+                  title: "Interoperability & DPI",
+                  text: "Built to integrate with existing national identity, payment, and health systems.",
+                },
+              ].map((card) => (
+                <div
+                  key={card.num}
+                  className="p-6 flex gap-4 items-start"
+                  style={{
+                    backgroundColor: "#ffffff",
+                    border: "1px solid #e2e8f0",
+                    borderLeft: "3px solid #0f766e",
+                    borderRadius: "12px",
+                  }}
                 >
-                  {card.num}
-                </span>
-                <div>
-                  <h3 className="font-bold text-gray-900 mb-1">{card.title}</h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    {card.text}
-                  </p>
+                  <span
+                    className="flex-shrink-0 w-9 h-9 rounded-full flex items-center justify-center font-bold text-white text-sm"
+                    style={{ backgroundColor: "#0f766e" }}
+                  >
+                    {card.num}
+                  </span>
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-1">
+                      {card.title}
+                    </h3>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      {card.text}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
+            {/* Right: image */}
+            <div className="flex-1 flex justify-center md:justify-end">
+              <img
+                src="/assets/generated/about-approach-workers.dim_800x600.jpg"
+                alt="Four diverse health workers collaborating around a digital device outdoors in Africa"
+                className="rounded-2xl shadow-lg w-full max-w-md object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>
 
       {/* SECTION 6: VALUES */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-20 px-6" style={{ backgroundColor: "#f8fafc" }}>
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-8">Our Values</h2>
           <div className="flex flex-wrap justify-center gap-3">
@@ -186,7 +221,7 @@ export default function About() {
               <span
                 key={value}
                 className="px-6 py-3 rounded-full text-white font-medium text-sm"
-                style={{ backgroundColor: "#0d6e6e" }}
+                style={{ backgroundColor: "#0f766e" }}
               >
                 {value}
               </span>
@@ -196,13 +231,15 @@ export default function About() {
       </section>
 
       {/* SECTION 7: TMU AI */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-20 px-6" style={{ backgroundColor: "#f0fdf9" }}>
         <div className="max-w-4xl mx-auto">
           <div
-            className="p-8 rounded-xl shadow-sm"
+            className="p-8"
             style={{
-              borderLeft: "4px solid #c8972e",
-              backgroundColor: "#fafafa",
+              backgroundColor: "#ffffff",
+              border: "1px solid #e2e8f0",
+              borderLeft: "3px solid #f59e0b",
+              borderRadius: "12px",
             }}
           >
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
@@ -218,8 +255,8 @@ export default function About() {
               href="https://www.tmu.ai"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-6 py-3 rounded-lg text-white font-semibold text-sm transition-opacity hover:opacity-90"
-              style={{ backgroundColor: "#0d6e6e" }}
+              className="inline-block px-6 py-3 rounded-full text-white font-semibold text-sm transition-opacity hover:opacity-90"
+              style={{ backgroundColor: "#0f766e" }}
               data-ocid="about.tmu_ai.button"
             >
               Learn About TMU AI

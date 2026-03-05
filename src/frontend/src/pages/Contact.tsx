@@ -121,11 +121,16 @@ export default function Contact() {
   return (
     <div>
       {/* SECTION 1: HERO */}
-      <section style={{ background: "#0d6e6e" }} className="py-20 px-6">
+      <section style={{ background: "#0f766e" }} className="py-20 px-6">
         <div className="max-w-4xl mx-auto text-center text-white">
           <p
-            className="text-sm font-bold uppercase tracking-widest mb-3"
-            style={{ color: "#c8972e" }}
+            className="uppercase mb-3"
+            style={{
+              color: "#b45309",
+              fontWeight: 800,
+              fontSize: "14px",
+              letterSpacing: "0.15em",
+            }}
           >
             CONTACT
           </p>
@@ -141,18 +146,22 @@ export default function Contact() {
       </section>
 
       {/* SECTION 2: CONTACT LAYOUT */}
-      <section style={{ background: "#e6f4f4" }} className="py-16 px-6">
+      <section style={{ background: "#f0fdf9" }} className="py-16 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col lg:flex-row gap-10">
             {/* LEFT COLUMN: Contact Form (60%) */}
             <div className="lg:w-3/5">
               <div
-                style={{ background: "#fafcfc" }}
-                className="rounded-2xl shadow-sm p-8"
+                style={{
+                  backgroundColor: "#ffffff",
+                  border: "1px solid #e2e8f0",
+                  borderRadius: "12px",
+                }}
+                className="shadow-sm p-8"
               >
                 <h2
                   className="text-2xl font-bold mb-6"
-                  style={{ color: "#0d6e6e" }}
+                  style={{ color: "#0f766e" }}
                 >
                   Send Us a Message
                 </h2>
@@ -164,13 +173,13 @@ export default function Contact() {
                   >
                     <div
                       className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-3xl"
-                      style={{ background: "#e6f4f4" }}
+                      style={{ background: "#f0fdf9" }}
                     >
                       ✅
                     </div>
                     <h3
                       className="text-xl font-bold mb-2"
-                      style={{ color: "#0d6e6e" }}
+                      style={{ color: "#0f766e" }}
                     >
                       Message Sent!
                     </h3>
@@ -184,7 +193,7 @@ export default function Contact() {
                     <div>
                       <label
                         className="block text-sm font-semibold mb-1"
-                        style={{ color: "#c8972e" }}
+                        style={{ color: "#b45309" }}
                         htmlFor="fullName"
                       >
                         Full Name
@@ -206,7 +215,7 @@ export default function Contact() {
                     <div>
                       <label
                         className="block text-sm font-semibold mb-1"
-                        style={{ color: "#c8972e" }}
+                        style={{ color: "#b45309" }}
                         htmlFor="organization"
                       >
                         Organization{" "}
@@ -230,7 +239,7 @@ export default function Contact() {
                     <div>
                       <label
                         className="block text-sm font-semibold mb-1"
-                        style={{ color: "#c8972e" }}
+                        style={{ color: "#b45309" }}
                         htmlFor="country"
                       >
                         Country
@@ -257,7 +266,7 @@ export default function Contact() {
                     <div>
                       <label
                         className="block text-sm font-semibold mb-1"
-                        style={{ color: "#c8972e" }}
+                        style={{ color: "#b45309" }}
                         htmlFor="email"
                       >
                         Email Address
@@ -279,7 +288,7 @@ export default function Contact() {
                     <div>
                       <label
                         className="block text-sm font-semibold mb-1"
-                        style={{ color: "#c8972e" }}
+                        style={{ color: "#b45309" }}
                         htmlFor="role"
                       >
                         Role / Capacity
@@ -307,7 +316,7 @@ export default function Contact() {
                     <div>
                       <label
                         className="block text-sm font-semibold mb-1"
-                        style={{ color: "#c8972e" }}
+                        style={{ color: "#b45309" }}
                         htmlFor="areaOfInterest"
                       >
                         Area of Interest
@@ -336,7 +345,7 @@ export default function Contact() {
                     <div>
                       <label
                         className="block text-sm font-semibold mb-1"
-                        style={{ color: "#c8972e" }}
+                        style={{ color: "#b45309" }}
                         htmlFor="message"
                       >
                         Message
@@ -358,8 +367,8 @@ export default function Contact() {
                     <button
                       data-ocid="contact.submit_button"
                       type="submit"
-                      className="w-full py-4 rounded-xl font-bold text-white text-base transition hover:opacity-90"
-                      style={{ background: "#0d6e6e" }}
+                      className="w-full py-4 rounded-full font-bold text-white text-base transition hover:opacity-90"
+                      style={{ background: "#0f766e" }}
                     >
                       Send Message
                     </button>
@@ -370,15 +379,20 @@ export default function Contact() {
 
             {/* RIGHT COLUMN: Contact Info (40%) */}
             <div className="lg:w-2/5 flex flex-col gap-5 justify-start">
-              <h2 className="text-2xl font-bold" style={{ color: "#0d6e6e" }}>
+              <h2 className="text-2xl font-bold" style={{ color: "#0f766e" }}>
                 Contact Information
               </h2>
 
               {/* Box 1: General Inquiries */}
               <div
                 data-ocid="contact.general.card"
-                className="bg-white rounded-xl shadow-sm p-6 flex items-start gap-4"
-                style={{ borderLeft: "4px solid #0d6e6e" }}
+                className="rounded-xl shadow-sm p-6 flex items-start gap-4"
+                style={{
+                  backgroundColor: "#ffffff",
+                  border: "1px solid #e2e8f0",
+                  borderLeft: "3px solid #0f766e",
+                  borderRadius: "12px",
+                }}
               >
                 <div className="flex-shrink-0 mt-1">
                   <svg
@@ -386,7 +400,7 @@ export default function Contact() {
                     height="24"
                     fill="none"
                     viewBox="0 0 24 24"
-                    stroke="#0d6e6e"
+                    stroke="#0f766e"
                     strokeWidth="2"
                     role="img"
                     aria-label="Email"
@@ -398,15 +412,20 @@ export default function Contact() {
                 </div>
                 <div>
                   <p
-                    className="text-xs font-bold uppercase tracking-widest mb-1"
-                    style={{ color: "#c8972e" }}
+                    className="uppercase mb-1"
+                    style={{
+                      color: "#b45309",
+                      fontWeight: 800,
+                      fontSize: "14px",
+                      letterSpacing: "0.15em",
+                    }}
                   >
                     General Inquiries
                   </p>
                   <a
                     href="mailto:info@ecogsm.com"
-                    className="text-gray-800 font-medium hover:underline"
-                    style={{ color: "#0d6e6e" }}
+                    className="font-medium hover:underline"
+                    style={{ color: "#0f766e" }}
                   >
                     info@ecogsm.com
                   </a>
@@ -416,8 +435,13 @@ export default function Contact() {
               {/* Box 2: Partnerships */}
               <div
                 data-ocid="contact.partnerships.card"
-                className="bg-white rounded-xl shadow-sm p-6 flex items-start gap-4"
-                style={{ borderLeft: "4px solid #0d6e6e" }}
+                className="rounded-xl shadow-sm p-6 flex items-start gap-4"
+                style={{
+                  backgroundColor: "#ffffff",
+                  border: "1px solid #e2e8f0",
+                  borderLeft: "3px solid #0f766e",
+                  borderRadius: "12px",
+                }}
               >
                 <div className="flex-shrink-0 mt-1">
                   <svg
@@ -425,7 +449,7 @@ export default function Contact() {
                     height="24"
                     fill="none"
                     viewBox="0 0 24 24"
-                    stroke="#0d6e6e"
+                    stroke="#0f766e"
                     strokeWidth="2"
                     role="img"
                     aria-label="Email"
@@ -437,15 +461,20 @@ export default function Contact() {
                 </div>
                 <div>
                   <p
-                    className="text-xs font-bold uppercase tracking-widest mb-1"
-                    style={{ color: "#c8972e" }}
+                    className="uppercase mb-1"
+                    style={{
+                      color: "#b45309",
+                      fontWeight: 800,
+                      fontSize: "14px",
+                      letterSpacing: "0.15em",
+                    }}
                   >
                     Partnerships
                   </p>
                   <a
                     href="mailto:partners@ecogsm.com"
                     className="font-medium hover:underline"
-                    style={{ color: "#0d6e6e" }}
+                    style={{ color: "#0f766e" }}
                   >
                     partners@ecogsm.com
                   </a>
@@ -455,8 +484,13 @@ export default function Contact() {
               {/* Box 3: Media & Press */}
               <div
                 data-ocid="contact.media.card"
-                className="bg-white rounded-xl shadow-sm p-6 flex items-start gap-4"
-                style={{ borderLeft: "4px solid #0d6e6e" }}
+                className="rounded-xl shadow-sm p-6 flex items-start gap-4"
+                style={{
+                  backgroundColor: "#ffffff",
+                  border: "1px solid #e2e8f0",
+                  borderLeft: "3px solid #0f766e",
+                  borderRadius: "12px",
+                }}
               >
                 <div className="flex-shrink-0 mt-1">
                   <svg
@@ -464,7 +498,7 @@ export default function Contact() {
                     height="24"
                     fill="none"
                     viewBox="0 0 24 24"
-                    stroke="#0d6e6e"
+                    stroke="#0f766e"
                     strokeWidth="2"
                     role="img"
                     aria-label="Email"
@@ -476,15 +510,20 @@ export default function Contact() {
                 </div>
                 <div>
                   <p
-                    className="text-xs font-bold uppercase tracking-widest mb-1"
-                    style={{ color: "#c8972e" }}
+                    className="uppercase mb-1"
+                    style={{
+                      color: "#b45309",
+                      fontWeight: 800,
+                      fontSize: "14px",
+                      letterSpacing: "0.15em",
+                    }}
                   >
                     Media & Press
                   </p>
                   <a
                     href="mailto:media@ecogsm.com"
                     className="font-medium hover:underline"
-                    style={{ color: "#0d6e6e" }}
+                    style={{ color: "#0f766e" }}
                   >
                     media@ecogsm.com
                   </a>

@@ -4,7 +4,10 @@ import { Link } from "@tanstack/react-router";
 
 function Hero() {
   return (
-    <section className="w-full bg-white py-16 md:py-24 overflow-hidden">
+    <section
+      className="w-full py-16 md:py-24 overflow-hidden"
+      style={{ backgroundColor: "#f0fdf9" }}
+    >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left column */}
@@ -13,7 +16,11 @@ function Hero() {
             <div className="inline-flex self-start">
               <span
                 className="inline-flex items-center px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide"
-                style={{ background: "#e6f4f4", color: "#0d6e6e" }}
+                style={{
+                  background: "#f0fdf9",
+                  color: "#0f766e",
+                  border: "1px solid #e2e8f0",
+                }}
               >
                 TMU AI Ecosystem · Global Social Medicine
               </span>
@@ -22,7 +29,7 @@ function Hero() {
             {/* Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-gray-900 font-display">
               Health for Every{" "}
-              <em className="not-italic" style={{ color: "#0d6e6e" }}>
+              <em className="not-italic" style={{ color: "#0f766e" }}>
                 Human Life
               </em>
             </h1>
@@ -42,7 +49,7 @@ function Hero() {
                   type="button"
                   data-ocid="hero.primary_button"
                   className="px-6 py-3 rounded-full text-white font-semibold text-sm transition-all hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
-                  style={{ background: "#0d6e6e" }}
+                  style={{ background: "#0f766e" }}
                 >
                   Explore the Ecosystem
                 </button>
@@ -52,7 +59,7 @@ function Hero() {
                   type="button"
                   data-ocid="hero.secondary_button"
                   className="px-6 py-3 rounded-full font-semibold text-sm border-2 bg-white transition-all hover:bg-opacity-5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
-                  style={{ borderColor: "#0d6e6e", color: "#0d6e6e" }}
+                  style={{ borderColor: "#0f766e", color: "#0f766e" }}
                 >
                   For Governments
                 </button>
@@ -62,7 +69,7 @@ function Hero() {
                   type="button"
                   data-ocid="hero.secondary_button"
                   className="px-6 py-3 rounded-full font-semibold text-sm border-2 bg-white transition-all hover:bg-opacity-5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
-                  style={{ borderColor: "#0d6e6e", color: "#0d6e6e" }}
+                  style={{ borderColor: "#0f766e", color: "#0f766e" }}
                 >
                   Become a Partner
                 </button>
@@ -86,7 +93,7 @@ function Hero() {
                   <div className="flex flex-col">
                     <span
                       className="text-2xl font-bold leading-none"
-                      style={{ color: "#0d6e6e" }}
+                      style={{ color: "#0f766e" }}
                     >
                       {stat.value}
                     </span>
@@ -116,7 +123,7 @@ function Hero() {
                 <title>Decorative teal blob shape</title>
                 <path
                   d="M280,60 C360,55 440,100 490,175 C540,250 545,350 500,425 C455,500 360,540 270,535 C180,530 90,490 50,410 C10,330 20,215 75,145 C130,75 200,65 280,60 Z"
-                  fill="#e6f4f4"
+                  fill="#e0f7f5"
                 />
               </svg>
             </div>
@@ -124,7 +131,7 @@ function Hero() {
             {/* Hero image */}
             <div className="relative z-10 rounded-2xl overflow-hidden shadow-xl w-full max-w-[520px]">
               <img
-                src="/assets/generated/hero-community-health.dim_700x560.jpg"
+                src="/assets/generated/home-hero-chw.dim_800x600.jpg"
                 alt="Community health workers in rural Africa using smartphones with patients"
                 className="w-full h-auto object-cover"
                 loading="eager"
@@ -159,12 +166,17 @@ const challengeCards = [
 
 function WhyEcoGSM() {
   return (
-    <section className="w-full bg-white py-20">
+    <section className="w-full py-20" style={{ backgroundColor: "#f8fafc" }}>
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="mb-12">
           <p
-            className="text-xs font-semibold uppercase tracking-widest mb-4"
-            style={{ color: "#c8972e" }}
+            className="uppercase mb-4"
+            style={{
+              color: "#b45309",
+              fontWeight: 800,
+              fontSize: "14px",
+              letterSpacing: "0.15em",
+            }}
           >
             The Challenge
           </p>
@@ -177,7 +189,13 @@ function WhyEcoGSM() {
           {challengeCards.map((card) => (
             <div
               key={card.title}
-              className="bg-white rounded-2xl shadow-md p-8 flex flex-col gap-4"
+              className="rounded-2xl p-8 flex flex-col gap-4"
+              style={{
+                backgroundColor: "#ffffff",
+                border: "1px solid #e2e8f0",
+                borderLeft: "3px solid #0f766e",
+                borderRadius: "12px",
+              }}
             >
               <span className="text-4xl" role="img" aria-label={card.title}>
                 {card.icon}
@@ -228,12 +246,17 @@ const serveCards = [
 
 function WhoItServes() {
   return (
-    <section className="w-full py-20" style={{ background: "#e6f4f4" }}>
+    <section className="w-full py-20" style={{ background: "#f0fdf9" }}>
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="mb-12 text-center">
           <p
-            className="text-xs font-semibold uppercase tracking-widest mb-4"
-            style={{ color: "#c8972e" }}
+            className="uppercase mb-4"
+            style={{
+              color: "#b45309",
+              fontWeight: 800,
+              fontSize: "14px",
+              letterSpacing: "0.15em",
+            }}
           >
             Who It Serves
           </p>
@@ -246,7 +269,13 @@ function WhoItServes() {
           {serveCards.map((card) => (
             <div
               key={card.title}
-              className="bg-white rounded-2xl shadow-sm p-6 flex flex-col gap-3"
+              className="rounded-2xl p-6 flex flex-col gap-3"
+              style={{
+                backgroundColor: "#ffffff",
+                border: "1px solid #e2e8f0",
+                borderLeft: "3px solid #0f766e",
+                borderRadius: "12px",
+              }}
             >
               <span className="text-3xl" role="img" aria-label={card.title}>
                 {card.icon}
@@ -302,12 +331,17 @@ const solutionCards = [
 
 function SolutionsPreview() {
   return (
-    <section className="w-full bg-white py-20">
+    <section className="w-full py-20" style={{ backgroundColor: "#f8fafc" }}>
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="mb-12 text-center">
           <p
-            className="text-xs font-semibold uppercase tracking-widest mb-4"
-            style={{ color: "#c8972e" }}
+            className="uppercase mb-4"
+            style={{
+              color: "#b45309",
+              fontWeight: 800,
+              fontSize: "14px",
+              letterSpacing: "0.15em",
+            }}
           >
             Our Solutions
           </p>
@@ -320,8 +354,13 @@ function SolutionsPreview() {
           {solutionCards.map((card) => (
             <div
               key={card.title}
-              className="bg-white shadow-sm rounded-r-2xl p-6 flex flex-col gap-3"
-              style={{ borderLeft: "4px solid #0d6e6e" }}
+              className="p-6 flex flex-col gap-3"
+              style={{
+                backgroundColor: "#ffffff",
+                border: "1px solid #e2e8f0",
+                borderLeft: "3px solid #0f766e",
+                borderRadius: "12px",
+              }}
             >
               <span className="text-3xl" role="img" aria-label={card.title}>
                 {card.icon}
@@ -342,7 +381,7 @@ function SolutionsPreview() {
               type="button"
               data-ocid="solutions.primary_button"
               className="px-8 py-3 rounded-full text-white font-semibold text-sm transition-all hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
-              style={{ background: "#0d6e6e" }}
+              style={{ background: "#0f766e" }}
             >
               View All Solutions
             </button>
@@ -366,11 +405,16 @@ const countryPills = [
 
 function Countries() {
   return (
-    <section className="w-full bg-white py-20">
+    <section className="w-full py-20" style={{ backgroundColor: "#f0fdf9" }}>
       <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
         <p
-          className="text-xs font-semibold uppercase tracking-widest mb-4"
-          style={{ color: "#c8972e" }}
+          className="uppercase mb-4"
+          style={{
+            color: "#b45309",
+            fontWeight: 800,
+            fontSize: "14px",
+            letterSpacing: "0.15em",
+          }}
         >
           Country Programs
         </p>
@@ -383,7 +427,7 @@ function Countries() {
             <span
               key={pill.label}
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white"
-              style={{ background: "#0d6e6e" }}
+              style={{ background: "#0f766e" }}
             >
               {pill.flag && (
                 <span role="img" aria-hidden="true">
@@ -400,7 +444,7 @@ function Countries() {
             type="button"
             data-ocid="countries.primary_button"
             className="px-8 py-3 rounded-full text-white font-semibold text-sm transition-all hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
-            style={{ background: "#0d6e6e" }}
+            style={{ background: "#0f766e" }}
           >
             View Country Deployments
           </button>
@@ -434,7 +478,7 @@ function FinalCTA() {
               type="button"
               data-ocid="cta.primary_button"
               className="px-8 py-3 rounded-full font-semibold text-sm transition-all hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
-              style={{ background: "white", color: "#0d6e6e" }}
+              style={{ background: "white", color: "#0f766e" }}
             >
               Schedule a Strategy Call
             </button>

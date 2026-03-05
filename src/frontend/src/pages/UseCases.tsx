@@ -116,13 +116,18 @@ export default function UseCases() {
       {/* SECTION 1: HERO */}
       <section
         data-ocid="usecases.hero.section"
-        style={{ backgroundColor: "#e6f4f4" }}
+        style={{ backgroundColor: "#f0fdf9" }}
         className="py-20 px-6"
       >
         <div className="max-w-4xl mx-auto text-center">
           <p
-            className="text-sm font-bold uppercase tracking-widest mb-4"
-            style={{ color: "#c8972e" }}
+            className="uppercase mb-4"
+            style={{
+              color: "#b45309",
+              fontWeight: 800,
+              fontSize: "14px",
+              letterSpacing: "0.15em",
+            }}
           >
             USE CASES &amp; IMPACT
           </p>
@@ -141,7 +146,7 @@ export default function UseCases() {
       {/* SECTION 2: USE CASE CARDS */}
       <section
         data-ocid="usecases.cards.section"
-        style={{ backgroundColor: "#fafcfc" }}
+        style={{ backgroundColor: "#f8fafc" }}
         className="py-20 px-6"
       >
         <div className="max-w-5xl mx-auto flex flex-col gap-10">
@@ -149,8 +154,13 @@ export default function UseCases() {
             <div
               key={card.title}
               data-ocid={`usecases.cards.item.${i + 1}`}
-              className="bg-white rounded-2xl shadow-sm overflow-hidden"
-              style={{ borderTop: "4px solid #0d6e6e" }}
+              className="overflow-hidden"
+              style={{
+                backgroundColor: "#ffffff",
+                border: "1px solid #e2e8f0",
+                borderTop: "3px solid #0f766e",
+                borderRadius: "12px",
+              }}
             >
               {/* Card Header */}
               <div className="px-8 pt-7 pb-5 border-b border-gray-100">
@@ -167,8 +177,13 @@ export default function UseCases() {
                 {/* Scenario */}
                 <div className="px-7 py-6">
                   <p
-                    className="text-xs font-bold uppercase tracking-widest mb-3"
-                    style={{ color: "#c8972e" }}
+                    className="uppercase mb-3"
+                    style={{
+                      color: "#b45309",
+                      fontWeight: 800,
+                      fontSize: "14px",
+                      letterSpacing: "0.15em",
+                    }}
                   >
                     Scenario
                   </p>
@@ -180,8 +195,13 @@ export default function UseCases() {
                 {/* How EcoGSM Helps */}
                 <div className="px-7 py-6">
                   <p
-                    className="text-xs font-bold uppercase tracking-widest mb-3"
-                    style={{ color: "#c8972e" }}
+                    className="uppercase mb-3"
+                    style={{
+                      color: "#b45309",
+                      fontWeight: 800,
+                      fontSize: "14px",
+                      letterSpacing: "0.15em",
+                    }}
                   >
                     How EcoGSM Helps
                   </p>
@@ -193,7 +213,7 @@ export default function UseCases() {
                       >
                         <span
                           className="mt-0.5 flex-shrink-0 font-bold"
-                          style={{ color: "#0d6e6e" }}
+                          style={{ color: "#0f766e" }}
                         >
                           •
                         </span>
@@ -206,8 +226,13 @@ export default function UseCases() {
                 {/* Impact */}
                 <div className="px-7 py-6">
                   <p
-                    className="text-xs font-bold uppercase tracking-widest mb-3"
-                    style={{ color: "#c8972e" }}
+                    className="uppercase mb-3"
+                    style={{
+                      color: "#b45309",
+                      fontWeight: 800,
+                      fontSize: "14px",
+                      letterSpacing: "0.15em",
+                    }}
                   >
                     Impact
                   </p>
@@ -240,7 +265,7 @@ export default function UseCases() {
       {/* SECTION 3: IMPACT FRAMEWORK */}
       <section
         data-ocid="usecases.framework.section"
-        style={{ backgroundColor: "#0d6e6e" }}
+        style={{ backgroundColor: "#0f766e" }}
         className="py-20 px-6"
       >
         <div className="max-w-6xl mx-auto">
@@ -257,7 +282,7 @@ export default function UseCases() {
                 <span className="text-4xl mb-4">{card.icon}</span>
                 <h3
                   className="text-lg font-bold mb-2"
-                  style={{ color: "#0d6e6e" }}
+                  style={{ color: "#0f766e" }}
                 >
                   {card.title}
                 </h3>

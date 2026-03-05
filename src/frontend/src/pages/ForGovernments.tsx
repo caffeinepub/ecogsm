@@ -57,15 +57,20 @@ export default function ForGovernments() {
       {/* SECTION 1: HERO */}
       <section
         data-ocid="govts.hero.section"
-        style={{ backgroundColor: "#0d6e6e" }}
+        style={{ backgroundColor: "#0f766e" }}
         className="py-20 px-6"
       >
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
           {/* Left: text */}
           <div className="flex-1">
             <p
-              className="text-sm font-bold uppercase tracking-widest mb-4"
-              style={{ color: "#c8972e" }}
+              className="uppercase mb-4"
+              style={{
+                color: "#b45309",
+                fontWeight: 800,
+                fontSize: "14px",
+                letterSpacing: "0.15em",
+              }}
             >
               FOR GOVERNMENTS
             </p>
@@ -96,7 +101,7 @@ export default function ForGovernments() {
       {/* SECTION 2: POLICY ALIGNMENT */}
       <section
         data-ocid="govts.policy.section"
-        style={{ backgroundColor: "#e6f4f4" }}
+        style={{ backgroundColor: "#f0fdf9" }}
         className="py-20 px-6"
       >
         <div className="max-w-4xl mx-auto">
@@ -108,7 +113,7 @@ export default function ForGovernments() {
               <li key={item} className="flex items-start gap-4">
                 <span
                   className="mt-0.5 flex-shrink-0 font-bold text-xl"
-                  style={{ color: "#0d6e6e" }}
+                  style={{ color: "#0f766e" }}
                 >
                   ✔
                 </span>
@@ -122,7 +127,7 @@ export default function ForGovernments() {
       {/* SECTION 3: BENEFITS */}
       <section
         data-ocid="govts.benefits.section"
-        style={{ backgroundColor: "#0d6e6e" }}
+        style={{ backgroundColor: "#0f766e" }}
         className="py-20 px-6"
       >
         <div className="max-w-6xl mx-auto">
@@ -150,7 +155,7 @@ export default function ForGovernments() {
       {/* SECTION 4: DEPLOYMENT MODELS */}
       <section
         data-ocid="govts.deployment.section"
-        style={{ backgroundColor: "#e6f4f4" }}
+        style={{ backgroundColor: "#f0fdf9" }}
         className="py-20 px-6"
       >
         <div className="max-w-6xl mx-auto">
@@ -162,12 +167,17 @@ export default function ForGovernments() {
               <div
                 key={card.num}
                 data-ocid={`govts.deployment.card.${i + 1}`}
-                className="bg-white rounded-2xl p-7 shadow-sm relative"
-                style={{ borderLeft: "4px solid #0d6e6e" }}
+                className="p-7 relative"
+                style={{
+                  backgroundColor: "#ffffff",
+                  border: "1px solid #e2e8f0",
+                  borderLeft: "3px solid #0f766e",
+                  borderRadius: "12px",
+                }}
               >
                 <span
                   className="flex-shrink-0 w-9 h-9 rounded-full flex items-center justify-center font-bold text-white text-sm mb-5 inline-flex"
-                  style={{ backgroundColor: "#0d6e6e" }}
+                  style={{ backgroundColor: "#0f766e" }}
                 >
                   {card.num}
                 </span>
@@ -184,7 +194,7 @@ export default function ForGovernments() {
       {/* SECTION 5: SECURITY & GOVERNANCE */}
       <section
         data-ocid="govts.security.section"
-        style={{ backgroundColor: "#0d6e6e" }}
+        style={{ backgroundColor: "#0f766e" }}
         className="py-20 px-6"
       >
         <div className="max-w-5xl mx-auto">
@@ -225,7 +235,7 @@ export default function ForGovernments() {
             <a
               href="/contact"
               data-ocid="govts.cta.primary_button"
-              className="px-8 py-4 rounded-xl font-semibold text-white transition-opacity hover:opacity-90 text-base"
+              className="px-8 py-4 rounded-full font-semibold text-white transition-opacity hover:opacity-90 text-base"
               style={{ backgroundColor: "#094f4f" }}
             >
               Request a Government Briefing
@@ -233,7 +243,7 @@ export default function ForGovernments() {
             <a
               href="/contact"
               data-ocid="govts.cta.secondary_button"
-              className="px-8 py-4 rounded-xl font-semibold transition-opacity hover:opacity-90 text-base"
+              className="px-8 py-4 rounded-full font-semibold transition-opacity hover:opacity-90 text-base"
               style={{ backgroundColor: "white", color: "#1a2e2e" }}
             >
               Download Government Overview (PDF)
