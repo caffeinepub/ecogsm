@@ -6,10 +6,10 @@ export default function CountryDeployments() {
       title: "EcoGSM Rwanda — Strengthening Primary Care and CHWs",
       focus: [
         "Supporting CHWs with digital tools for household visits",
-        "AI health guidance and self-care support to rural households via Morshid",
+        "AI-assisted health guidance to rural households via Vospital",
         "Integration with national digital health initiatives",
       ],
-      solutions: "Morshid · CHW Tools · Vospital",
+      solutions: "Vospital · CHW Tools · TMU Platform",
       languages: "Kinyarwanda · French · English",
     },
     {
@@ -17,11 +17,11 @@ export default function CountryDeployments() {
       country: "Niger",
       title: "EcoGSM Niger — Schools, Connectivity, and Youth Health",
       focus: [
-        "Health education via Etitude to connected schools",
-        "AI health guidance and self-care tips for students and teachers via Morshid",
-        "Teleconsultation via Vospital for remote support",
+        "Health education content via Etitude to connected schools",
+        "Teleconsultations for students and teachers via Vospital",
+        "Remote support for rural communities",
       ],
-      solutions: "Etitude · Morshid · Vospital",
+      solutions: "Etitude · Vospital · CHW Tools",
       languages: "French · Hausa",
     },
     {
@@ -29,10 +29,11 @@ export default function CountryDeployments() {
       country: "Morocco",
       title: "EcoGSM Morocco — Youth Digital Health Literacy",
       focus: [
-        "Youth health awareness and digital literacy programs",
-        "Urban-rural health gap bridging",
+        "Youth health and mental health support in schools and universities",
+        "AI agricultural guidance for farmers via Morshid",
+        "Integration with telehealth and primary care facilities",
       ],
-      solutions: "Etitude · Morshid",
+      solutions: "Morshid · Etitude · Vospital",
       languages: "Arabic · French · Darija",
     },
     {
@@ -40,10 +41,11 @@ export default function CountryDeployments() {
       country: "Nigeria",
       title: "EcoGSM Nigeria — Community Health & Maternal Care",
       focus: [
-        "Urban peripheries and peri-urban communities",
-        "Maternal health, CHW tools, and community outreach",
+        "High-density, low-income urban communities with limited clinic capacity",
+        "Community health worker support and referrals",
+        "Partnerships with local innovators and civil society organizations",
       ],
-      solutions: "Morshid · CHW Tools · Vospital",
+      solutions: "Vospital · CHW Tools · Etitude",
       languages: "English · Hausa · Yoruba · Igbo",
     },
     {
@@ -51,10 +53,11 @@ export default function CountryDeployments() {
       country: "Kenya",
       title: "EcoGSM Kenya — AI Health & School Programs",
       focus: [
-        "Digital-first health in innovation hubs and rural counties",
-        "School health programs and AI health guidance via Morshid",
+        "AI-enabled health guidance for citizens via Vospital",
+        "Integration with mobile money and national digital systems",
+        "Support for both rural and peri-urban clinics",
       ],
-      solutions: "Morshid · Etitude · Vospital",
+      solutions: "Vospital · TMU Platform · Etitude",
       languages: "English · Swahili",
     },
   ];
@@ -62,13 +65,13 @@ export default function CountryDeployments() {
   return (
     <div>
       {/* SECTION 1: HERO */}
-      <section style={{ background: "#0f766e" }} className="py-20 px-6">
+      <section style={{ background: "#128C7E" }} className="py-20 px-6">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
           <div className="flex-1 text-white">
             <p
               className="uppercase mb-3"
               style={{
-                color: "#c8972e",
+                color: "#FFD700",
                 fontWeight: 800,
                 fontSize: "16px",
                 letterSpacing: "0.18em",
@@ -76,10 +79,16 @@ export default function CountryDeployments() {
             >
               COUNTRY PROGRAMS
             </p>
-            <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-5">
+            <h1
+              className="text-4xl md:text-5xl font-bold leading-tight mb-5"
+              style={{ fontWeight: 800 }}
+            >
               From Concept to Country Programs
             </h1>
-            <p className="text-lg text-white/80 max-w-xl">
+            <p
+              className="text-white/80 max-w-xl"
+              style={{ fontSize: "1.1rem", lineHeight: 1.8 }}
+            >
               EcoGSM deploys through country-level programs co-designed with
               local partners, aligned with national strategies, and focused on
               measurable impact.
@@ -96,7 +105,7 @@ export default function CountryDeployments() {
       </section>
 
       {/* SECTION 2: COUNTRY CARDS */}
-      <section style={{ background: "#f0fdf9" }} className="py-20 px-6">
+      <section style={{ background: "#f0fdf4" }} className="py-20 px-6">
         <div className="max-w-5xl mx-auto flex flex-col gap-8">
           {countries.map((c, i) => (
             <div
@@ -106,7 +115,7 @@ export default function CountryDeployments() {
               style={{
                 backgroundColor: "#ffffff",
                 border: "1px solid #e2e8f0",
-                borderLeft: "3px solid #0f766e",
+                borderLeft: "3px solid #25D366",
                 borderRadius: "12px",
               }}
             >
@@ -116,7 +125,7 @@ export default function CountryDeployments() {
                   <span className="text-5xl leading-none">{c.flag}</span>
                   <span
                     className="text-sm font-bold uppercase tracking-widest"
-                    style={{ color: "#0f766e" }}
+                    style={{ color: "#25D366" }}
                   >
                     {c.country}
                   </span>
@@ -124,8 +133,12 @@ export default function CountryDeployments() {
 
                 {/* Title */}
                 <h2
-                  className="text-xl font-bold mb-4"
-                  style={{ color: "#1a2e2e" }}
+                  className="font-bold mb-4"
+                  style={{
+                    color: "#1a2e2e",
+                    fontSize: "1.4rem",
+                    fontWeight: 700,
+                  }}
                 >
                   {c.title}
                 </h2>
@@ -135,7 +148,7 @@ export default function CountryDeployments() {
                   <p
                     className="uppercase mb-2"
                     style={{
-                      color: "#c8972e",
+                      color: "#FFD700",
                       fontWeight: 800,
                       fontSize: "16px",
                       letterSpacing: "0.18em",
@@ -147,11 +160,12 @@ export default function CountryDeployments() {
                     {c.focus.map((point) => (
                       <li
                         key={point}
-                        className="flex items-start gap-2 text-sm text-gray-700"
+                        className="flex items-start gap-2 text-gray-700"
+                        style={{ fontSize: "1.1rem", lineHeight: 1.8 }}
                       >
                         <span
                           className="mt-1 w-1.5 h-1.5 rounded-full flex-shrink-0"
-                          style={{ background: "#0f766e" }}
+                          style={{ background: "#25D366" }}
                         />
                         {point}
                       </li>
@@ -164,7 +178,7 @@ export default function CountryDeployments() {
                   <span
                     className="uppercase"
                     style={{
-                      color: "#c8972e",
+                      color: "#FFD700",
                       fontWeight: 800,
                       fontSize: "16px",
                       letterSpacing: "0.18em",
@@ -172,7 +186,12 @@ export default function CountryDeployments() {
                   >
                     Key Solutions:{" "}
                   </span>
-                  <span className="text-sm text-gray-700">{c.solutions}</span>
+                  <span
+                    className="text-gray-700"
+                    style={{ fontSize: "1.1rem" }}
+                  >
+                    {c.solutions}
+                  </span>
                 </div>
 
                 {/* Languages */}
@@ -180,7 +199,7 @@ export default function CountryDeployments() {
                   <span
                     className="uppercase"
                     style={{
-                      color: "#c8972e",
+                      color: "#FFD700",
                       fontWeight: 800,
                       fontSize: "16px",
                       letterSpacing: "0.18em",
@@ -188,7 +207,12 @@ export default function CountryDeployments() {
                   >
                     Languages:{" "}
                   </span>
-                  <span className="text-sm text-gray-700">{c.languages}</span>
+                  <span
+                    className="text-gray-700"
+                    style={{ fontSize: "1.1rem" }}
+                  >
+                    {c.languages}
+                  </span>
                 </div>
               </div>
             </div>
@@ -197,15 +221,18 @@ export default function CountryDeployments() {
       </section>
 
       {/* SECTION 3: CTA */}
-      <section style={{ background: "#c8972e" }} className="py-20 px-6">
+      <section style={{ background: "#FFD700" }} className="py-20 px-6">
         <div className="max-w-3xl mx-auto text-center">
           <h2
-            className="text-3xl md:text-4xl font-bold mb-4"
-            style={{ color: "#1a2e2e" }}
+            className="font-bold mb-4"
+            style={{ color: "#1a2e2e", fontSize: "2.4rem", fontWeight: 800 }}
           >
             Interested in deploying EcoGSM in your country?
           </h2>
-          <p className="text-base mb-8" style={{ color: "#1a2e2e" }}>
+          <p
+            className="mb-8"
+            style={{ color: "#1a2e2e", fontSize: "1.1rem", lineHeight: 1.8 }}
+          >
             We work with governments, local institutions, and international
             partners to design programs that respond to real needs.
           </p>
@@ -213,8 +240,8 @@ export default function CountryDeployments() {
             <button
               type="button"
               data-ocid="cta.discuss_deployment.button"
-              className="px-8 py-4 rounded-full font-semibold text-white text-base transition hover:opacity-90"
-              style={{ background: "#094f4f" }}
+              className="px-8 py-4 rounded-full font-bold text-white text-base transition hover:opacity-90"
+              style={{ background: "#075E54", fontWeight: 700 }}
             >
               Discuss a Country Deployment
             </button>

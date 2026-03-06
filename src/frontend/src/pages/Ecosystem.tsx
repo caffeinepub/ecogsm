@@ -54,7 +54,7 @@ export default function Ecosystem() {
       {/* SECTION 1: HERO */}
       <section
         data-ocid="ecosystem.hero.section"
-        style={{ backgroundColor: "#0f766e" }}
+        style={{ backgroundColor: "#128C7E" }}
         className="py-20 px-6"
       >
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
@@ -63,7 +63,7 @@ export default function Ecosystem() {
             <p
               className="uppercase mb-4"
               style={{
-                color: "#c8972e",
+                color: "#FFD700",
                 fontWeight: 800,
                 fontSize: "16px",
                 letterSpacing: "0.18em",
@@ -71,10 +71,16 @@ export default function Ecosystem() {
             >
               THE ECOGSM ECOSYSTEM
             </p>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+            <h1
+              className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight"
+              style={{ fontWeight: 800 }}
+            >
               A Multi-Layered Ecosystem for Social Medicine
             </h1>
-            <p className="text-lg text-white/85 leading-relaxed mb-8">
+            <p
+              className="text-white/85 leading-relaxed mb-8"
+              style={{ fontSize: "1.1rem", lineHeight: 1.8 }}
+            >
               EcoGSM connects people, providers, infrastructure, and finance
               through four interacting layers. Each layer supports and amplifies
               the others, creating a scalable model for social medicine in
@@ -108,13 +114,13 @@ export default function Ecosystem() {
       <section
         data-ocid="ecosystem.layer1.section"
         className="py-20 px-6"
-        style={{ backgroundColor: "#f8fafc" }}
+        style={{ backgroundColor: "#f0fdf4" }}
       >
         <div className="max-w-5xl mx-auto">
           <p
             className="uppercase mb-3"
             style={{
-              color: "#c8972e",
+              color: "#FFD700",
               fontWeight: 800,
               fontSize: "16px",
               letterSpacing: "0.18em",
@@ -122,7 +128,10 @@ export default function Ecosystem() {
           >
             LAYER 1
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-10">
+          <h2
+            className="font-bold text-gray-900 mb-10"
+            style={{ fontSize: "2.4rem", fontWeight: 800 }}
+          >
             Health Access Layer — Care at Your Fingertips
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
@@ -133,20 +142,23 @@ export default function Ecosystem() {
                 style={{
                   backgroundColor: "#ffffff",
                   border: "1px solid #e2e8f0",
-                  borderLeft: "3px solid #0f766e",
+                  borderLeft: "3px solid #25D366",
                   borderRadius: "12px",
                 }}
               >
                 <span className="text-3xl flex-shrink-0">{item.icon}</span>
-                <p className="text-gray-700 font-medium leading-snug">
+                <p
+                  className="text-gray-700 font-medium leading-snug"
+                  style={{ fontSize: "1.1rem", lineHeight: 1.8 }}
+                >
                   {item.text}
                 </p>
               </div>
             ))}
           </div>
           <p
-            className="text-base font-medium italic"
-            style={{ color: "#0f766e" }}
+            className="font-medium italic"
+            style={{ color: "#25D366", fontSize: "1.1rem" }}
           >
             Accessible via smartphones, school/clinic terminals, and CHW
             devices.
@@ -157,14 +169,14 @@ export default function Ecosystem() {
       {/* SECTION 3: LAYER 2 — Provider Enablement */}
       <section
         data-ocid="ecosystem.layer2.section"
-        style={{ backgroundColor: "#f0fdf9" }}
+        style={{ backgroundColor: "#075E54" }}
         className="py-20 px-6"
       >
         <div className="max-w-5xl mx-auto">
           <p
             className="uppercase mb-3"
             style={{
-              color: "#c8972e",
+              color: "#FFD700",
               fontWeight: 800,
               fontSize: "16px",
               letterSpacing: "0.18em",
@@ -172,7 +184,10 @@ export default function Ecosystem() {
           >
             LAYER 2
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-10">
+          <h2
+            className="font-bold text-white mb-10"
+            style={{ fontSize: "2.4rem", fontWeight: 800 }}
+          >
             Provider Enablement Layer — Empowering Frontline Workers
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -180,11 +195,14 @@ export default function Ecosystem() {
               <div key={item} className="flex items-start gap-3">
                 <span
                   className="mt-1 flex-shrink-0 font-bold text-lg"
-                  style={{ color: "#0f766e" }}
+                  style={{ color: "#FFD700" }}
                 >
                   ✔
                 </span>
-                <span className="text-gray-700 text-base font-medium">
+                <span
+                  className="text-white font-medium"
+                  style={{ fontSize: "1.1rem", lineHeight: 1.8 }}
+                >
                   {item}
                 </span>
               </div>
@@ -197,13 +215,13 @@ export default function Ecosystem() {
       <section
         data-ocid="ecosystem.layer3.section"
         className="py-20 px-6"
-        style={{ backgroundColor: "#f8fafc" }}
+        style={{ backgroundColor: "#f0fdf4" }}
       >
         <div className="max-w-5xl mx-auto">
           <p
             className="uppercase mb-3"
             style={{
-              color: "#c8972e",
+              color: "#FFD700",
               fontWeight: 800,
               fontSize: "16px",
               letterSpacing: "0.18em",
@@ -211,10 +229,16 @@ export default function Ecosystem() {
           >
             LAYER 3
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          <h2
+            className="font-bold text-gray-900 mb-6"
+            style={{ fontSize: "2.4rem", fontWeight: 800 }}
+          >
             Infrastructure &amp; Logistics Layer — The Digital Backbone
           </h2>
-          <p className="text-gray-600 text-lg leading-relaxed mb-10 max-w-3xl">
+          <p
+            className="text-gray-600 leading-relaxed mb-10 max-w-3xl"
+            style={{ fontSize: "1.1rem", lineHeight: 1.8 }}
+          >
             EcoGSM integrates with national digital initiatives,
             telecommunications partners, satellite providers such as Starlink,
             and local supply-chain operators.
@@ -227,12 +251,15 @@ export default function Ecosystem() {
                 style={{
                   backgroundColor: "#ffffff",
                   border: "1px solid #e2e8f0",
-                  borderLeft: "3px solid #0f766e",
+                  borderLeft: "3px solid #25D366",
                   borderRadius: "12px",
                 }}
               >
                 <span className="text-3xl flex-shrink-0">{item.icon}</span>
-                <p className="text-gray-700 font-medium leading-snug">
+                <p
+                  className="text-gray-700 font-medium leading-snug"
+                  style={{ fontSize: "1.1rem", lineHeight: 1.8 }}
+                >
                   {item.text}
                 </p>
               </div>
@@ -244,14 +271,14 @@ export default function Ecosystem() {
       {/* SECTION 5: LAYER 4 — Finance & Sustainability */}
       <section
         data-ocid="ecosystem.layer4.section"
-        style={{ backgroundColor: "#094f4f" }}
+        style={{ backgroundColor: "#075E54" }}
         className="py-20 px-6"
       >
         <div className="max-w-5xl mx-auto">
           <p
             className="uppercase mb-3"
             style={{
-              color: "#c8972e",
+              color: "#FFD700",
               fontWeight: 800,
               fontSize: "16px",
               letterSpacing: "0.18em",
@@ -259,11 +286,17 @@ export default function Ecosystem() {
           >
             LAYER 4
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+          <h2
+            className="font-bold text-white mb-6"
+            style={{ fontSize: "2.4rem", fontWeight: 800 }}
+          >
             Finance &amp; Sustainability Layer — Funding Social Medicine at
             Scale
           </h2>
-          <p className="text-white/80 text-lg leading-relaxed mb-10 max-w-3xl">
+          <p
+            className="text-white/80 leading-relaxed mb-10 max-w-3xl"
+            style={{ fontSize: "1.1rem", lineHeight: 1.8 }}
+          >
             EcoGSM introduces a community-owned financial model ensuring
             affordability for patients while enabling scalability across
             countries.
@@ -275,7 +308,10 @@ export default function Ecosystem() {
                 className="flex items-start gap-4 p-5 rounded-xl border border-white/15 bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-colors"
               >
                 <span className="text-3xl flex-shrink-0">{item.icon}</span>
-                <p className="text-white font-medium leading-snug">
+                <p
+                  className="text-white font-medium leading-snug"
+                  style={{ fontSize: "1.1rem", lineHeight: 1.8 }}
+                >
                   {item.text}
                 </p>
               </div>

@@ -121,12 +121,12 @@ export default function Contact() {
   return (
     <div>
       {/* SECTION 1: HERO */}
-      <section style={{ background: "#0f766e" }} className="py-20 px-6">
+      <section style={{ background: "#128C7E" }} className="py-20 px-6">
         <div className="max-w-4xl mx-auto text-center text-white">
           <p
             className="uppercase mb-3"
             style={{
-              color: "#c8972e",
+              color: "#FFD700",
               fontWeight: 800,
               fontSize: "16px",
               letterSpacing: "0.18em",
@@ -134,10 +134,16 @@ export default function Contact() {
           >
             CONTACT
           </p>
-          <h1 className="text-4xl md:text-5xl font-bold mb-5">
+          <h1
+            className="text-4xl md:text-5xl font-bold mb-5"
+            style={{ fontWeight: 800 }}
+          >
             Contact EcoGSM
           </h1>
-          <p className="text-lg md:text-xl opacity-90 max-w-2xl mx-auto leading-relaxed">
+          <p
+            className="opacity-90 max-w-2xl mx-auto leading-relaxed"
+            style={{ fontSize: "1.1rem", lineHeight: 1.8 }}
+          >
             We welcome inquiries from governments, NGOs, health providers,
             investors, and committed individuals who wish to participate in or
             support the EcoGSM ecosystem.
@@ -146,7 +152,7 @@ export default function Contact() {
       </section>
 
       {/* SECTION 2: CONTACT LAYOUT */}
-      <section style={{ background: "#f0fdf9" }} className="py-16 px-6">
+      <section style={{ background: "#f0fdf4" }} className="py-16 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col lg:flex-row gap-10">
             {/* LEFT COLUMN: Contact Form (60%) */}
@@ -160,8 +166,12 @@ export default function Contact() {
                 className="shadow-sm p-8"
               >
                 <h2
-                  className="text-2xl font-bold mb-6"
-                  style={{ color: "#0f766e" }}
+                  className="font-bold mb-6"
+                  style={{
+                    color: "#25D366",
+                    fontSize: "2.4rem",
+                    fontWeight: 800,
+                  }}
                 >
                   Send Us a Message
                 </h2>
@@ -173,17 +183,24 @@ export default function Contact() {
                   >
                     <div
                       className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-3xl"
-                      style={{ background: "#f0fdf9" }}
+                      style={{ background: "#f0fdf4" }}
                     >
                       ✅
                     </div>
                     <h3
-                      className="text-xl font-bold mb-2"
-                      style={{ color: "#0f766e" }}
+                      className="font-bold mb-2"
+                      style={{
+                        color: "#25D366",
+                        fontSize: "1.4rem",
+                        fontWeight: 700,
+                      }}
                     >
                       Message Sent!
                     </h3>
-                    <p className="text-gray-600">
+                    <p
+                      className="text-gray-600"
+                      style={{ fontSize: "1.1rem", lineHeight: 1.8 }}
+                    >
                       Thank you for reaching out. We'll be in touch soon.
                     </p>
                   </div>
@@ -192,8 +209,8 @@ export default function Contact() {
                     {/* Full Name */}
                     <div>
                       <label
-                        className="block text-sm font-semibold mb-1"
-                        style={{ color: "#c8972e" }}
+                        className="block font-semibold mb-1"
+                        style={{ color: "#FFD700", fontSize: "1rem" }}
                         htmlFor="fullName"
                       >
                         Full Name
@@ -207,15 +224,16 @@ export default function Contact() {
                         value={formData.fullName}
                         onChange={handleChange}
                         placeholder="Your full name"
-                        className="w-full border border-gray-200 rounded-lg px-4 py-3 text-gray-800 bg-white focus:outline-none focus:ring-2 focus:ring-teal-500 transition"
+                        className="w-full border border-gray-200 rounded-lg px-4 py-3 text-gray-800 bg-white focus:outline-none focus:ring-2 transition"
+                        style={{ fontSize: "1.1rem" }}
                       />
                     </div>
 
                     {/* Organization */}
                     <div>
                       <label
-                        className="block text-sm font-semibold mb-1"
-                        style={{ color: "#c8972e" }}
+                        className="block font-semibold mb-1"
+                        style={{ color: "#FFD700", fontSize: "1rem" }}
                         htmlFor="organization"
                       >
                         Organization{" "}
@@ -231,15 +249,16 @@ export default function Contact() {
                         value={formData.organization}
                         onChange={handleChange}
                         placeholder="Your organization name"
-                        className="w-full border border-gray-200 rounded-lg px-4 py-3 text-gray-800 bg-white focus:outline-none focus:ring-2 focus:ring-teal-500 transition"
+                        className="w-full border border-gray-200 rounded-lg px-4 py-3 text-gray-800 bg-white focus:outline-none focus:ring-2 transition"
+                        style={{ fontSize: "1.1rem" }}
                       />
                     </div>
 
                     {/* Country */}
                     <div>
                       <label
-                        className="block text-sm font-semibold mb-1"
-                        style={{ color: "#c8972e" }}
+                        className="block font-semibold mb-1"
+                        style={{ color: "#FFD700", fontSize: "1rem" }}
                         htmlFor="country"
                       >
                         Country
@@ -251,7 +270,8 @@ export default function Contact() {
                         required
                         value={formData.country}
                         onChange={handleChange}
-                        className="w-full border border-gray-200 rounded-lg px-4 py-3 text-gray-800 bg-white focus:outline-none focus:ring-2 focus:ring-teal-500 transition appearance-none"
+                        className="w-full border border-gray-200 rounded-lg px-4 py-3 text-gray-800 bg-white focus:outline-none focus:ring-2 transition appearance-none"
+                        style={{ fontSize: "1.1rem" }}
                       >
                         <option value="">Select your country</option>
                         {countries.map((c) => (
@@ -265,8 +285,8 @@ export default function Contact() {
                     {/* Email Address */}
                     <div>
                       <label
-                        className="block text-sm font-semibold mb-1"
-                        style={{ color: "#c8972e" }}
+                        className="block font-semibold mb-1"
+                        style={{ color: "#FFD700", fontSize: "1rem" }}
                         htmlFor="email"
                       >
                         Email Address
@@ -280,15 +300,16 @@ export default function Contact() {
                         value={formData.email}
                         onChange={handleChange}
                         placeholder="you@example.com"
-                        className="w-full border border-gray-200 rounded-lg px-4 py-3 text-gray-800 bg-white focus:outline-none focus:ring-2 focus:ring-teal-500 transition"
+                        className="w-full border border-gray-200 rounded-lg px-4 py-3 text-gray-800 bg-white focus:outline-none focus:ring-2 transition"
+                        style={{ fontSize: "1.1rem" }}
                       />
                     </div>
 
                     {/* Role / Capacity */}
                     <div>
                       <label
-                        className="block text-sm font-semibold mb-1"
-                        style={{ color: "#c8972e" }}
+                        className="block font-semibold mb-1"
+                        style={{ color: "#FFD700", fontSize: "1rem" }}
                         htmlFor="role"
                       >
                         Role / Capacity
@@ -300,7 +321,8 @@ export default function Contact() {
                         required
                         value={formData.role}
                         onChange={handleChange}
-                        className="w-full border border-gray-200 rounded-lg px-4 py-3 text-gray-800 bg-white focus:outline-none focus:ring-2 focus:ring-teal-500 transition appearance-none"
+                        className="w-full border border-gray-200 rounded-lg px-4 py-3 text-gray-800 bg-white focus:outline-none focus:ring-2 transition appearance-none"
+                        style={{ fontSize: "1.1rem" }}
                       >
                         <option value="">Select your role</option>
                         <option value="Government">Government</option>
@@ -315,8 +337,8 @@ export default function Contact() {
                     {/* Area of Interest */}
                     <div>
                       <label
-                        className="block text-sm font-semibold mb-1"
-                        style={{ color: "#c8972e" }}
+                        className="block font-semibold mb-1"
+                        style={{ color: "#FFD700", fontSize: "1rem" }}
                         htmlFor="areaOfInterest"
                       >
                         Area of Interest
@@ -328,7 +350,8 @@ export default function Contact() {
                         required
                         value={formData.areaOfInterest}
                         onChange={handleChange}
-                        className="w-full border border-gray-200 rounded-lg px-4 py-3 text-gray-800 bg-white focus:outline-none focus:ring-2 focus:ring-teal-500 transition appearance-none"
+                        className="w-full border border-gray-200 rounded-lg px-4 py-3 text-gray-800 bg-white focus:outline-none focus:ring-2 transition appearance-none"
+                        style={{ fontSize: "1.1rem" }}
                       >
                         <option value="">Select area of interest</option>
                         <option value="Country Deployment">
@@ -344,8 +367,8 @@ export default function Contact() {
                     {/* Message */}
                     <div>
                       <label
-                        className="block text-sm font-semibold mb-1"
-                        style={{ color: "#c8972e" }}
+                        className="block font-semibold mb-1"
+                        style={{ color: "#FFD700", fontSize: "1rem" }}
                         htmlFor="message"
                       >
                         Message
@@ -359,7 +382,8 @@ export default function Contact() {
                         value={formData.message}
                         onChange={handleChange}
                         placeholder="Tell us how you'd like to engage with EcoGSM..."
-                        className="w-full border border-gray-200 rounded-lg px-4 py-3 text-gray-800 bg-white focus:outline-none focus:ring-2 focus:ring-teal-500 transition resize-none"
+                        className="w-full border border-gray-200 rounded-lg px-4 py-3 text-gray-800 bg-white focus:outline-none focus:ring-2 transition resize-none"
+                        style={{ fontSize: "1.1rem" }}
                       />
                     </div>
 
@@ -368,7 +392,7 @@ export default function Contact() {
                       data-ocid="contact.submit_button"
                       type="submit"
                       className="w-full py-4 rounded-full font-bold text-white text-base transition hover:opacity-90"
-                      style={{ background: "#0f766e" }}
+                      style={{ background: "#25D366", fontWeight: 700 }}
                     >
                       Send Message
                     </button>
@@ -379,7 +403,14 @@ export default function Contact() {
 
             {/* RIGHT COLUMN: Contact Info (40%) */}
             <div className="lg:w-2/5 flex flex-col gap-5 justify-start">
-              <h2 className="text-2xl font-bold" style={{ color: "#0f766e" }}>
+              <h2
+                className="font-bold"
+                style={{
+                  color: "#25D366",
+                  fontSize: "2.4rem",
+                  fontWeight: 800,
+                }}
+              >
                 Contact Information
               </h2>
 
@@ -390,7 +421,7 @@ export default function Contact() {
                 style={{
                   backgroundColor: "#ffffff",
                   border: "1px solid #e2e8f0",
-                  borderLeft: "3px solid #0f766e",
+                  borderLeft: "3px solid #25D366",
                   borderRadius: "12px",
                 }}
               >
@@ -400,7 +431,7 @@ export default function Contact() {
                     height="24"
                     fill="none"
                     viewBox="0 0 24 24"
-                    stroke="#0f766e"
+                    stroke="#25D366"
                     strokeWidth="2"
                     role="img"
                     aria-label="Email"
@@ -414,7 +445,7 @@ export default function Contact() {
                   <p
                     className="uppercase mb-1"
                     style={{
-                      color: "#c8972e",
+                      color: "#FFD700",
                       fontWeight: 800,
                       fontSize: "16px",
                       letterSpacing: "0.18em",
@@ -425,7 +456,7 @@ export default function Contact() {
                   <a
                     href="mailto:info@ecogsm.com"
                     className="font-medium hover:underline"
-                    style={{ color: "#0f766e" }}
+                    style={{ color: "#25D366", fontSize: "1.1rem" }}
                   >
                     info@ecogsm.com
                   </a>
@@ -439,7 +470,7 @@ export default function Contact() {
                 style={{
                   backgroundColor: "#ffffff",
                   border: "1px solid #e2e8f0",
-                  borderLeft: "3px solid #0f766e",
+                  borderLeft: "3px solid #25D366",
                   borderRadius: "12px",
                 }}
               >
@@ -449,7 +480,7 @@ export default function Contact() {
                     height="24"
                     fill="none"
                     viewBox="0 0 24 24"
-                    stroke="#0f766e"
+                    stroke="#25D366"
                     strokeWidth="2"
                     role="img"
                     aria-label="Email"
@@ -463,7 +494,7 @@ export default function Contact() {
                   <p
                     className="uppercase mb-1"
                     style={{
-                      color: "#c8972e",
+                      color: "#FFD700",
                       fontWeight: 800,
                       fontSize: "16px",
                       letterSpacing: "0.18em",
@@ -474,7 +505,7 @@ export default function Contact() {
                   <a
                     href="mailto:partners@ecogsm.com"
                     className="font-medium hover:underline"
-                    style={{ color: "#0f766e" }}
+                    style={{ color: "#25D366", fontSize: "1.1rem" }}
                   >
                     partners@ecogsm.com
                   </a>
@@ -488,7 +519,7 @@ export default function Contact() {
                 style={{
                   backgroundColor: "#ffffff",
                   border: "1px solid #e2e8f0",
-                  borderLeft: "3px solid #0f766e",
+                  borderLeft: "3px solid #25D366",
                   borderRadius: "12px",
                 }}
               >
@@ -498,7 +529,7 @@ export default function Contact() {
                     height="24"
                     fill="none"
                     viewBox="0 0 24 24"
-                    stroke="#0f766e"
+                    stroke="#25D366"
                     strokeWidth="2"
                     role="img"
                     aria-label="Email"
@@ -512,7 +543,7 @@ export default function Contact() {
                   <p
                     className="uppercase mb-1"
                     style={{
-                      color: "#c8972e",
+                      color: "#FFD700",
                       fontWeight: 800,
                       fontSize: "16px",
                       letterSpacing: "0.18em",
@@ -523,7 +554,7 @@ export default function Contact() {
                   <a
                     href="mailto:media@ecogsm.com"
                     className="font-medium hover:underline"
-                    style={{ color: "#0f766e" }}
+                    style={{ color: "#25D366", fontSize: "1.1rem" }}
                   >
                     media@ecogsm.com
                   </a>

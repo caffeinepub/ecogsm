@@ -56,7 +56,7 @@ export default function ForPartners() {
       {/* SECTION 1: HERO */}
       <section
         data-ocid="partners.hero.section"
-        style={{ backgroundColor: "#f0fdf9" }}
+        style={{ backgroundColor: "#f0fdf4" }}
         className="py-20 px-6"
       >
         <div className="max-w-5xl mx-auto flex flex-row items-stretch gap-8">
@@ -66,7 +66,7 @@ export default function ForPartners() {
             style={{
               width: "4px",
               minHeight: "80px",
-              backgroundColor: "#c8972e",
+              backgroundColor: "#FFD700",
               alignSelf: "stretch",
             }}
           />
@@ -75,7 +75,7 @@ export default function ForPartners() {
             <p
               className="uppercase mb-4"
               style={{
-                color: "#c8972e",
+                color: "#FFD700",
                 fontWeight: 800,
                 fontSize: "16px",
                 letterSpacing: "0.18em",
@@ -83,10 +83,16 @@ export default function ForPartners() {
             >
               FOR PARTNERS &amp; NGOs
             </p>
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+            <h1
+              className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight"
+              style={{ fontWeight: 800 }}
+            >
               A Platform for Collaboration and Scaled Impact
             </h1>
-            <p className="text-lg text-gray-700 leading-relaxed max-w-2xl">
+            <p
+              className="text-gray-700 leading-relaxed max-w-2xl"
+              style={{ fontSize: "1.1rem", lineHeight: 1.8 }}
+            >
               EcoGSM is built to partner. We provide the digital rails and
               operational framework that allow your programs to reach more
               people, more efficiently, with better data and accountability.
@@ -98,11 +104,14 @@ export default function ForPartners() {
       {/* SECTION 2: WHO WE PARTNER WITH */}
       <section
         data-ocid="partners.who.section"
-        style={{ backgroundColor: "#0f766e" }}
+        style={{ backgroundColor: "#128C7E" }}
         className="py-20 px-6"
       >
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-10 text-center">
+          <h2
+            className="font-bold text-white mb-10 text-center"
+            style={{ fontSize: "2.4rem", fontWeight: 800 }}
+          >
             Who Can Partner with EcoGSM?
           </h2>
           <div className="flex flex-wrap justify-center gap-3">
@@ -111,7 +120,7 @@ export default function ForPartners() {
                 key={badge}
                 data-ocid={`partners.who.badge.${i + 1}`}
                 className="px-5 py-2 rounded-full font-semibold text-sm"
-                style={{ backgroundColor: "white", color: "#0f766e" }}
+                style={{ backgroundColor: "white", color: "#128C7E" }}
               >
                 {badge}
               </span>
@@ -123,11 +132,14 @@ export default function ForPartners() {
       {/* SECTION 3: WHY PARTNER */}
       <section
         data-ocid="partners.why.section"
-        style={{ backgroundColor: "#f0fdf9" }}
+        style={{ backgroundColor: "#f0fdf4" }}
         className="py-20 px-6"
       >
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
+          <h2
+            className="font-bold text-gray-900 mb-12 text-center"
+            style={{ fontSize: "2.4rem", fontWeight: 800 }}
+          >
             Why Partner with EcoGSM?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -139,15 +151,23 @@ export default function ForPartners() {
                 style={{
                   backgroundColor: "#ffffff",
                   border: "1px solid #e2e8f0",
-                  borderLeft: "3px solid #0f766e",
+                  borderLeft: "3px solid #25D366",
                   borderRadius: "12px",
                 }}
               >
                 <span className="text-5xl mb-5 block">{card.icon}</span>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <h3
+                  className="font-bold text-gray-900 mb-3"
+                  style={{ fontSize: "1.4rem", fontWeight: 700 }}
+                >
                   {card.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">{card.text}</p>
+                <p
+                  className="text-gray-600 leading-relaxed"
+                  style={{ fontSize: "1.1rem", lineHeight: 1.8 }}
+                >
+                  {card.text}
+                </p>
               </div>
             ))}
           </div>
@@ -157,11 +177,14 @@ export default function ForPartners() {
       {/* SECTION 4: PARTNERSHIP MODELS */}
       <section
         data-ocid="partners.models.section"
-        style={{ backgroundColor: "#0f766e" }}
+        style={{ backgroundColor: "#075E54" }}
         className="py-20 px-6"
       >
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-12 text-center">
+          <h2
+            className="font-bold text-white mb-12 text-center"
+            style={{ fontSize: "2.4rem", fontWeight: 800 }}
+          >
             Models of Partnership
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -173,10 +196,19 @@ export default function ForPartners() {
                 style={{ backgroundColor: "rgba(255,255,255,0.08)" }}
               >
                 <span className="text-5xl">{item.icon}</span>
-                <h3 className="font-bold text-white text-lg">{item.title}</h3>
+                <h3
+                  className="font-bold text-white"
+                  style={{ fontSize: "1.4rem", fontWeight: 700 }}
+                >
+                  {item.title}
+                </h3>
                 <p
-                  style={{ color: "rgba(255,255,255,0.85)" }}
-                  className="text-sm leading-relaxed"
+                  style={{
+                    color: "rgba(255,255,255,0.85)",
+                    fontSize: "1.1rem",
+                    lineHeight: 1.8,
+                  }}
+                  className="leading-relaxed"
                 >
                   {item.text}
                 </p>
@@ -189,27 +221,34 @@ export default function ForPartners() {
       {/* SECTION 5: CTA */}
       <section
         data-ocid="partners.cta.section"
-        style={{ backgroundColor: "#094f4f" }}
+        style={{ backgroundColor: "#075E54" }}
         className="py-20 px-6"
       >
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-10">
+          <h2
+            className="font-bold text-white mb-10"
+            style={{ fontSize: "2.4rem", fontWeight: 800 }}
+          >
             Let&apos;s build something that lasts.
           </h2>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="/contact"
               data-ocid="partners.cta.primary_button"
-              className="px-8 py-4 rounded-full font-semibold transition-opacity hover:opacity-90 text-base"
-              style={{ backgroundColor: "#c8972e", color: "#1a2e2e" }}
+              className="px-8 py-4 rounded-full font-bold transition-opacity hover:opacity-90 text-base"
+              style={{
+                backgroundColor: "#FFD700",
+                color: "#1a2e2e",
+                fontWeight: 700,
+              }}
             >
               Discuss a Partnership
             </a>
             <a
               href="/contact"
               data-ocid="partners.cta.secondary_button"
-              className="px-8 py-4 rounded-full font-semibold transition-opacity hover:opacity-90 text-base border-2 border-white text-white"
-              style={{ backgroundColor: "transparent" }}
+              className="px-8 py-4 rounded-full font-bold transition-opacity hover:opacity-90 text-base border-2 border-white text-white"
+              style={{ backgroundColor: "transparent", fontWeight: 700 }}
             >
               Download Partner Brief (PDF)
             </a>

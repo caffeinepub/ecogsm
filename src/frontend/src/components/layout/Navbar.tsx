@@ -14,12 +14,12 @@ const moreLinks = [
   {
     label: "Use Cases & Impact",
     to: "/use-cases",
-    borderColor: "#0f766e",
+    borderColor: "#25D366",
   },
   {
     label: "Technology",
     to: "/technology",
-    borderColor: "#c8972e",
+    borderColor: "#FFD700",
   },
   {
     label: "Country Deployments",
@@ -68,7 +68,7 @@ export function Navbar() {
         <Link
           to="/"
           className="flex items-center gap-1 font-bold text-xl shrink-0"
-          style={{ color: "#0f766e" }}
+          style={{ color: "#25D366" }}
           data-ocid="nav.link"
         >
           🌍 EcoGSM
@@ -82,14 +82,25 @@ export function Navbar() {
               to={link.to}
               data-ocid="nav.link"
               className={[
-                "px-2.5 py-2 rounded-md text-sm transition-colors whitespace-nowrap",
-                isActive(link.to)
-                  ? "font-bold"
-                  : "text-gray-600 hover:text-[#0f766e] hover:bg-teal-50 font-medium",
+                "px-2.5 py-2 rounded-md transition-colors whitespace-nowrap",
+                isActive(link.to) ? "font-bold" : "text-gray-600 font-semibold",
               ].join(" ")}
-              style={
-                isActive(link.to) ? { color: "#0f766e", fontWeight: 700 } : {}
-              }
+              style={{
+                fontSize: "1rem",
+                fontWeight: isActive(link.to) ? 700 : 600,
+                color: isActive(link.to) ? "#25D366" : undefined,
+              }}
+              onMouseEnter={(e) => {
+                if (!isActive(link.to)) {
+                  (e.currentTarget as HTMLAnchorElement).style.color =
+                    "#25D366";
+                }
+              }}
+              onMouseLeave={(e) => {
+                if (!isActive(link.to)) {
+                  (e.currentTarget as HTMLAnchorElement).style.color = "";
+                }
+              }}
             >
               {link.label}
             </Link>
@@ -102,16 +113,16 @@ export function Navbar() {
               data-ocid="nav.more_dropdown"
               onClick={() => setDropdownOpen((prev) => !prev)}
               className={[
-                "inline-flex items-center gap-1 px-2.5 py-2 rounded-md text-sm transition-colors whitespace-nowrap",
+                "inline-flex items-center gap-1 px-2.5 py-2 rounded-md transition-colors whitespace-nowrap",
                 isMoreActive || dropdownOpen
                   ? "font-bold"
-                  : "text-gray-600 hover:text-[#0f766e] hover:bg-teal-50 font-medium",
+                  : "text-gray-600 font-semibold",
               ].join(" ")}
-              style={
-                isMoreActive || dropdownOpen
-                  ? { color: "#0f766e", fontWeight: 700 }
-                  : {}
-              }
+              style={{
+                fontSize: "1rem",
+                fontWeight: isMoreActive || dropdownOpen ? 700 : 600,
+                color: isMoreActive || dropdownOpen ? "#25D366" : undefined,
+              }}
               aria-haspopup="true"
               aria-expanded={dropdownOpen}
             >
@@ -142,8 +153,8 @@ export function Navbar() {
                     className={[
                       "block px-4 py-3 text-sm transition-colors",
                       isActive(link.to)
-                        ? "font-bold bg-[#f0fdf9]"
-                        : "font-medium hover:bg-[#f0fdf9]",
+                        ? "font-bold bg-[#f0fdf4]"
+                        : "font-medium hover:bg-[#f0fdf4]",
                     ].join(" ")}
                     style={{
                       color: "#0f172a",
@@ -163,21 +174,23 @@ export function Navbar() {
           <Link
             to="/join"
             data-ocid="nav.join_button"
-            className="inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold transition-all whitespace-nowrap focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+            className="inline-flex items-center px-4 py-2 rounded-full font-semibold transition-all whitespace-nowrap focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
             style={{
+              fontSize: "1rem",
+              fontWeight: 600,
               backgroundColor: "transparent",
-              border: "2px solid #0f766e",
-              color: "#0f766e",
+              border: "2px solid #25D366",
+              color: "#25D366",
             }}
             onMouseEnter={(e) => {
               (e.currentTarget as HTMLAnchorElement).style.backgroundColor =
-                "#0f766e";
+                "#25D366";
               (e.currentTarget as HTMLAnchorElement).style.color = "#ffffff";
             }}
             onMouseLeave={(e) => {
               (e.currentTarget as HTMLAnchorElement).style.backgroundColor =
                 "transparent";
-              (e.currentTarget as HTMLAnchorElement).style.color = "#0f766e";
+              (e.currentTarget as HTMLAnchorElement).style.color = "#25D366";
             }}
           >
             Join the Movement
@@ -185,8 +198,12 @@ export function Navbar() {
           <Link
             to="/contact"
             data-ocid="nav.primary_button"
-            className="inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold text-white transition-opacity hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 whitespace-nowrap"
-            style={{ backgroundColor: "#0f766e" }}
+            className="inline-flex items-center px-4 py-2 rounded-full font-bold text-white transition-opacity hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 whitespace-nowrap"
+            style={{
+              backgroundColor: "#25D366",
+              fontSize: "1rem",
+              fontWeight: 700,
+            }}
           >
             Contact
           </Link>
@@ -195,7 +212,7 @@ export function Navbar() {
         {/* Mobile hamburger */}
         <button
           type="button"
-          className="xl:hidden p-2 rounded-md text-gray-600 hover:text-[#0f766e] hover:bg-teal-50 transition-colors"
+          className="xl:hidden p-2 rounded-md text-gray-600 transition-colors"
           aria-label={mobileOpen ? "Close menu" : "Open menu"}
           onClick={() => setMobileOpen((prev) => !prev)}
         >
@@ -219,14 +236,16 @@ export function Navbar() {
               data-ocid="nav.link"
               onClick={() => setMobileOpen(false)}
               className={[
-                "block px-3 py-2.5 rounded-md text-sm transition-colors",
+                "block px-3 py-2.5 rounded-md transition-colors",
                 isActive(link.to)
-                  ? "bg-teal-50"
-                  : "text-gray-600 hover:text-[#0f766e] hover:bg-teal-50 font-medium",
+                  ? "bg-[#f0fdf4]"
+                  : "text-gray-600 font-semibold",
               ].join(" ")}
-              style={
-                isActive(link.to) ? { color: "#0f766e", fontWeight: 700 } : {}
-              }
+              style={{
+                fontSize: "1rem",
+                fontWeight: isActive(link.to) ? 700 : 600,
+                color: isActive(link.to) ? "#25D366" : undefined,
+              }}
             >
               {link.label}
             </Link>
@@ -241,14 +260,14 @@ export function Navbar() {
               className={[
                 "block px-3 py-2.5 rounded-md text-sm transition-colors",
                 isActive(link.to)
-                  ? "bg-[#f0fdf9]"
-                  : "text-gray-600 hover:text-[#0f766e] hover:bg-[#f0fdf9] font-medium",
+                  ? "bg-[#f0fdf4]"
+                  : "text-gray-600 hover:bg-[#f0fdf4] font-semibold",
               ].join(" ")}
               style={{
                 borderLeft: `3px solid ${link.borderColor}`,
-                ...(isActive(link.to)
-                  ? { color: "#0f766e", fontWeight: 700 }
-                  : {}),
+                fontSize: "1rem",
+                fontWeight: isActive(link.to) ? 700 : 600,
+                ...(isActive(link.to) ? { color: "#25D366" } : {}),
               }}
             >
               {link.label}
@@ -259,11 +278,13 @@ export function Navbar() {
               to="/join"
               data-ocid="nav.join_button"
               onClick={() => setMobileOpen(false)}
-              className="inline-flex items-center justify-center px-5 py-2.5 rounded-full text-sm font-semibold transition-colors"
+              className="inline-flex items-center justify-center px-5 py-2.5 rounded-full font-semibold transition-colors"
               style={{
+                fontSize: "1rem",
+                fontWeight: 600,
                 backgroundColor: "transparent",
-                border: "2px solid #0f766e",
-                color: "#0f766e",
+                border: "2px solid #25D366",
+                color: "#25D366",
               }}
             >
               Join the Movement
@@ -272,8 +293,12 @@ export function Navbar() {
               to="/contact"
               data-ocid="nav.primary_button"
               onClick={() => setMobileOpen(false)}
-              className="inline-flex items-center justify-center px-5 py-2.5 rounded-full text-sm font-semibold text-white"
-              style={{ backgroundColor: "#0f766e" }}
+              className="inline-flex items-center justify-center px-5 py-2.5 rounded-full font-bold text-white"
+              style={{
+                backgroundColor: "#25D366",
+                fontSize: "1rem",
+                fontWeight: 700,
+              }}
             >
               Contact
             </Link>

@@ -6,7 +6,7 @@ function Hero() {
   return (
     <section
       className="w-full py-16 md:py-24 overflow-hidden"
-      style={{ backgroundColor: "#f0fdf9" }}
+      style={{ backgroundColor: "#128C7E" }}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -17,9 +17,9 @@ function Hero() {
               <span
                 className="inline-flex items-center px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide"
                 style={{
-                  background: "#f0fdf9",
-                  color: "#0f766e",
-                  border: "1px solid #e2e8f0",
+                  background: "rgba(255,255,255,0.15)",
+                  color: "#ffffff",
+                  border: "1px solid rgba(255,255,255,0.3)",
                 }}
               >
                 TMU AI Ecosystem · Global Social Medicine
@@ -27,15 +27,18 @@ function Hero() {
             </div>
 
             {/* Headline */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-gray-900 font-display">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-white font-display">
               Health for Every{" "}
-              <em className="not-italic" style={{ color: "#0f766e" }}>
+              <em className="not-italic" style={{ color: "#FFD700" }}>
                 Human Life
               </em>
             </h1>
 
             {/* Subtitle */}
-            <p className="text-lg text-gray-600 leading-relaxed max-w-xl">
+            <p
+              className="text-white/90 leading-relaxed max-w-xl"
+              style={{ fontSize: "1.1rem", lineHeight: 1.8 }}
+            >
               EcoGSM is a digital-first, community-owned health ecosystem —
               combining AI, telehealth, community health workers, and
               sustainable finance to deliver accessible care for Africa and the
@@ -48,8 +51,8 @@ function Hero() {
                 <button
                   type="button"
                   data-ocid="hero.primary_button"
-                  className="px-6 py-3 rounded-full text-white font-semibold text-sm transition-all hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
-                  style={{ background: "#0f766e" }}
+                  className="px-6 py-3 rounded-full font-bold text-white text-sm transition-all hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
+                  style={{ background: "#25D366", fontWeight: 700 }}
                 >
                   Explore the Ecosystem
                 </button>
@@ -58,8 +61,12 @@ function Hero() {
                 <button
                   type="button"
                   data-ocid="hero.secondary_button"
-                  className="px-6 py-3 rounded-full font-semibold text-sm border-2 bg-white transition-all hover:bg-opacity-5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
-                  style={{ borderColor: "#0f766e", color: "#0f766e" }}
+                  className="px-6 py-3 rounded-full font-bold text-sm border-2 bg-transparent transition-all hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
+                  style={{
+                    borderColor: "#ffffff",
+                    color: "#ffffff",
+                    fontWeight: 700,
+                  }}
                 >
                   For Governments
                 </button>
@@ -68,8 +75,12 @@ function Hero() {
                 <button
                   type="button"
                   data-ocid="hero.secondary_button"
-                  className="px-6 py-3 rounded-full font-semibold text-sm border-2 bg-white transition-all hover:bg-opacity-5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
-                  style={{ borderColor: "#0f766e", color: "#0f766e" }}
+                  className="px-6 py-3 rounded-full font-bold text-sm border-2 bg-transparent transition-all hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
+                  style={{
+                    borderColor: "#ffffff",
+                    color: "#ffffff",
+                    fontWeight: 700,
+                  }}
                 >
                   Become a Partner
                 </button>
@@ -77,7 +88,7 @@ function Hero() {
             </div>
 
             {/* Stats bar */}
-            <div className="flex items-center gap-0 pt-2 mt-2 border-t border-gray-100">
+            <div className="flex items-center gap-0 pt-2 mt-2 border-t border-white/20">
               {[
                 { value: "4+", label: "Countries Targeted" },
                 { value: "6", label: "Integrated Solutions" },
@@ -87,17 +98,17 @@ function Hero() {
                   {idx > 0 && (
                     <div
                       className="w-px h-10 mx-6"
-                      style={{ background: "#d1e8e8" }}
+                      style={{ background: "rgba(255,255,255,0.3)" }}
                     />
                   )}
                   <div className="flex flex-col">
                     <span
                       className="text-2xl font-bold leading-none"
-                      style={{ color: "#0f766e" }}
+                      style={{ color: "#FFD700" }}
                     >
                       {stat.value}
                     </span>
-                    <span className="text-xs text-gray-500 mt-1 whitespace-nowrap">
+                    <span className="text-xs text-white/70 mt-1 whitespace-nowrap">
                       {stat.label}
                     </span>
                   </div>
@@ -118,12 +129,12 @@ function Hero() {
                 className="w-[480px] h-[480px] lg:w-[540px] lg:h-[540px]"
                 xmlns="http://www.w3.org/2000/svg"
                 role="img"
-                aria-label="Decorative teal blob shape"
+                aria-label="Decorative green blob shape"
               >
-                <title>Decorative teal blob shape</title>
+                <title>Decorative green blob shape</title>
                 <path
                   d="M280,60 C360,55 440,100 490,175 C540,250 545,350 500,425 C455,500 360,540 270,535 C180,530 90,490 50,410 C10,330 20,215 75,145 C130,75 200,65 280,60 Z"
-                  fill="#e0f7f5"
+                  fill="rgba(255,255,255,0.08)"
                 />
               </svg>
             </div>
@@ -166,13 +177,13 @@ const challengeCards = [
 
 function WhyEcoGSM() {
   return (
-    <section className="w-full py-20" style={{ backgroundColor: "#f8fafc" }}>
+    <section className="w-full py-20" style={{ backgroundColor: "#f0fdf4" }}>
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="mb-12">
           <p
             className="uppercase mb-4"
             style={{
-              color: "#c8972e",
+              color: "#FFD700",
               fontWeight: 800,
               fontSize: "16px",
               letterSpacing: "0.18em",
@@ -180,7 +191,10 @@ function WhyEcoGSM() {
           >
             The Challenge
           </p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 max-w-2xl leading-tight font-display">
+          <h2
+            className="text-gray-900 max-w-2xl leading-tight font-display font-bold"
+            style={{ fontSize: "2.4rem", fontWeight: 800 }}
+          >
             Why the world needs an Ecosystem for Global Social Medicine
           </h2>
         </div>
@@ -193,17 +207,23 @@ function WhyEcoGSM() {
               style={{
                 backgroundColor: "#ffffff",
                 border: "1px solid #e2e8f0",
-                borderLeft: "3px solid #0f766e",
+                borderLeft: "3px solid #25D366",
                 borderRadius: "12px",
               }}
             >
               <span className="text-4xl" role="img" aria-label={card.title}>
                 {card.icon}
               </span>
-              <h3 className="text-xl font-bold text-gray-900 font-display">
+              <h3
+                className="font-bold text-gray-900 font-display"
+                style={{ fontSize: "1.4rem", fontWeight: 700 }}
+              >
                 {card.title}
               </h3>
-              <p className="text-gray-600 leading-relaxed text-sm">
+              <p
+                className="text-gray-600 leading-relaxed"
+                style={{ fontSize: "1.1rem", lineHeight: 1.8 }}
+              >
                 {card.text}
               </p>
             </div>
@@ -246,13 +266,13 @@ const serveCards = [
 
 function WhoItServes() {
   return (
-    <section className="w-full py-20" style={{ background: "#f0fdf9" }}>
+    <section className="w-full py-20" style={{ background: "#075E54" }}>
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="mb-12 text-center">
           <p
             className="uppercase mb-4"
             style={{
-              color: "#c8972e",
+              color: "#FFD700",
               fontWeight: 800,
               fontSize: "16px",
               letterSpacing: "0.18em",
@@ -260,7 +280,10 @@ function WhoItServes() {
           >
             Who It Serves
           </p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight font-display">
+          <h2
+            className="text-white leading-tight font-display font-bold"
+            style={{ fontSize: "2.4rem", fontWeight: 800 }}
+          >
             EcoGSM works for everyone in the health ecosystem
           </h2>
         </div>
@@ -273,17 +296,23 @@ function WhoItServes() {
               style={{
                 backgroundColor: "#ffffff",
                 border: "1px solid #e2e8f0",
-                borderLeft: "3px solid #0f766e",
+                borderLeft: "3px solid #25D366",
                 borderRadius: "12px",
               }}
             >
               <span className="text-3xl" role="img" aria-label={card.title}>
                 {card.icon}
               </span>
-              <h3 className="text-lg font-bold text-gray-900 font-display">
+              <h3
+                className="font-bold text-gray-900 font-display"
+                style={{ fontSize: "1.4rem", fontWeight: 700 }}
+              >
                 {card.title}
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p
+                className="text-gray-600 leading-relaxed"
+                style={{ fontSize: "1.1rem", lineHeight: 1.8 }}
+              >
                 {card.text}
               </p>
             </div>
@@ -331,13 +360,13 @@ const solutionCards = [
 
 function SolutionsPreview() {
   return (
-    <section className="w-full py-20" style={{ backgroundColor: "#f8fafc" }}>
+    <section className="w-full py-20" style={{ backgroundColor: "#f0fdf4" }}>
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="mb-12 text-center">
           <p
             className="uppercase mb-4"
             style={{
-              color: "#c8972e",
+              color: "#FFD700",
               fontWeight: 800,
               fontSize: "16px",
               letterSpacing: "0.18em",
@@ -345,7 +374,10 @@ function SolutionsPreview() {
           >
             Our Solutions
           </p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight font-display">
+          <h2
+            className="text-gray-900 leading-tight font-display font-bold"
+            style={{ fontSize: "2.4rem", fontWeight: 800 }}
+          >
             Six integrated solutions, one connected ecosystem
           </h2>
         </div>
@@ -358,17 +390,23 @@ function SolutionsPreview() {
               style={{
                 backgroundColor: "#ffffff",
                 border: "1px solid #e2e8f0",
-                borderLeft: "3px solid #0f766e",
+                borderLeft: "3px solid #25D366",
                 borderRadius: "12px",
               }}
             >
               <span className="text-3xl" role="img" aria-label={card.title}>
                 {card.icon}
               </span>
-              <h3 className="text-lg font-bold text-gray-900 font-display">
+              <h3
+                className="font-bold text-gray-900 font-display"
+                style={{ fontSize: "1.4rem", fontWeight: 700 }}
+              >
                 {card.title}
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p
+                className="text-gray-600 leading-relaxed"
+                style={{ fontSize: "1.1rem", lineHeight: 1.8 }}
+              >
                 {card.text}
               </p>
             </div>
@@ -380,8 +418,8 @@ function SolutionsPreview() {
             <button
               type="button"
               data-ocid="solutions.primary_button"
-              className="px-8 py-3 rounded-full text-white font-semibold text-sm transition-all hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
-              style={{ background: "#0f766e" }}
+              className="px-8 py-3 rounded-full text-white font-bold text-sm transition-all hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
+              style={{ background: "#25D366", fontWeight: 700 }}
             >
               View All Solutions
             </button>
@@ -405,12 +443,12 @@ const countryPills = [
 
 function Countries() {
   return (
-    <section className="w-full py-20" style={{ backgroundColor: "#f0fdf9" }}>
+    <section className="w-full py-20" style={{ backgroundColor: "#128C7E" }}>
       <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
         <p
           className="uppercase mb-4"
           style={{
-            color: "#c8972e",
+            color: "#FFD700",
             fontWeight: 800,
             fontSize: "16px",
             letterSpacing: "0.18em",
@@ -418,7 +456,10 @@ function Countries() {
         >
           Country Programs
         </p>
-        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight font-display mb-10">
+        <h2
+          className="text-white leading-tight font-display font-bold mb-10"
+          style={{ fontSize: "2.4rem", fontWeight: 800 }}
+        >
           Expanding across Africa and the Global South
         </h2>
 
@@ -427,7 +468,7 @@ function Countries() {
             <span
               key={pill.label}
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-white"
-              style={{ background: "#0f766e" }}
+              style={{ background: "#25D366" }}
             >
               {pill.flag && (
                 <span role="img" aria-hidden="true">
@@ -443,8 +484,8 @@ function Countries() {
           <button
             type="button"
             data-ocid="countries.primary_button"
-            className="px-8 py-3 rounded-full text-white font-semibold text-sm transition-all hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
-            style={{ background: "#0f766e" }}
+            className="px-8 py-3 rounded-full text-white font-bold text-sm transition-all hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
+            style={{ background: "#25D366", fontWeight: 700 }}
           >
             View Country Deployments
           </button>
@@ -460,13 +501,19 @@ function FinalCTA() {
   return (
     <section
       className="w-full py-20 text-white text-center"
-      style={{ background: "#094f4f" }}
+      style={{ background: "#075E54" }}
     >
       <div className="max-w-3xl mx-auto px-6 lg:px-8">
-        <h2 className="text-3xl sm:text-4xl font-bold leading-tight mb-6 font-display">
+        <h2
+          className="text-white leading-tight font-bold mb-6 font-display"
+          style={{ fontSize: "2.4rem", fontWeight: 800 }}
+        >
           Be part of the next generation of social medicine.
         </h2>
-        <p className="text-white/80 text-lg leading-relaxed mb-10">
+        <p
+          className="text-white/80 leading-relaxed mb-10"
+          style={{ fontSize: "1.1rem", lineHeight: 1.8 }}
+        >
           Whether you are a policymaker, healthcare provider, NGO, or
           mission-driven investor, EcoGSM gives you a practical,
           technology-enabled way to expand healthcare access and build resilient
@@ -477,8 +524,8 @@ function FinalCTA() {
             <button
               type="button"
               data-ocid="cta.primary_button"
-              className="px-8 py-3 rounded-full font-semibold text-sm transition-all hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
-              style={{ background: "white", color: "#0f766e" }}
+              className="px-8 py-3 rounded-full font-bold text-white text-sm transition-all hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
+              style={{ background: "#25D366", fontWeight: 700 }}
             >
               Schedule a Strategy Call
             </button>
@@ -487,7 +534,12 @@ function FinalCTA() {
             <button
               type="button"
               data-ocid="cta.secondary_button"
-              className="px-8 py-3 rounded-full font-semibold text-sm border-2 border-white text-white bg-transparent transition-all hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
+              className="px-8 py-3 rounded-full font-bold text-sm transition-all hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
+              style={{
+                background: "#FFD700",
+                color: "#1a2e2e",
+                fontWeight: 700,
+              }}
             >
               Join the Movement
             </button>

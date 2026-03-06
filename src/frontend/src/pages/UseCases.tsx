@@ -113,14 +113,14 @@ export default function UseCases() {
       {/* SECTION 1: HERO */}
       <section
         data-ocid="usecases.hero.section"
-        style={{ backgroundColor: "#f0fdf9" }}
+        style={{ backgroundColor: "#128C7E" }}
         className="py-20 px-6"
       >
         <div className="max-w-4xl mx-auto text-center">
           <p
             className="uppercase mb-4"
             style={{
-              color: "#c8972e",
+              color: "#FFD700",
               fontWeight: 800,
               fontSize: "16px",
               letterSpacing: "0.18em",
@@ -128,10 +128,16 @@ export default function UseCases() {
           >
             USE CASES &amp; IMPACT
           </p>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+          <h1
+            className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight"
+            style={{ fontWeight: 800 }}
+          >
             Real-World Scenarios, Tangible Impact
           </h1>
-          <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
+          <p
+            className="text-white/90 leading-relaxed max-w-3xl mx-auto"
+            style={{ fontSize: "1.1rem", lineHeight: 1.8 }}
+          >
             EcoGSM is designed for practical environments where health access
             gaps are most acute. Below are representative use cases illustrating
             how the ecosystem creates value for patients, health workers,
@@ -143,7 +149,7 @@ export default function UseCases() {
       {/* SECTION 2: USE CASE CARDS */}
       <section
         data-ocid="usecases.cards.section"
-        style={{ backgroundColor: "#f8fafc" }}
+        style={{ backgroundColor: "#f0fdf4" }}
         className="py-20 px-6"
       >
         <div className="max-w-5xl mx-auto flex flex-col gap-10">
@@ -155,7 +161,7 @@ export default function UseCases() {
               style={{
                 backgroundColor: "#ffffff",
                 border: "1px solid #e2e8f0",
-                borderTop: "3px solid #0f766e",
+                borderTop: "3px solid #25D366",
                 borderRadius: "12px",
               }}
             >
@@ -163,7 +169,10 @@ export default function UseCases() {
               <div className="px-8 pt-7 pb-5 border-b border-gray-100">
                 <div className="flex items-center gap-4">
                   <span className="text-4xl">{card.icon}</span>
-                  <h2 className="text-xl md:text-2xl font-bold text-gray-900">
+                  <h2
+                    className="font-bold text-gray-900"
+                    style={{ fontSize: "1.4rem", fontWeight: 700 }}
+                  >
                     {card.title}
                   </h2>
                 </div>
@@ -176,7 +185,7 @@ export default function UseCases() {
                   <p
                     className="uppercase mb-3"
                     style={{
-                      color: "#c8972e",
+                      color: "#FFD700",
                       fontWeight: 800,
                       fontSize: "16px",
                       letterSpacing: "0.18em",
@@ -184,7 +193,10 @@ export default function UseCases() {
                   >
                     Scenario
                   </p>
-                  <p className="text-gray-700 italic leading-relaxed text-base">
+                  <p
+                    className="text-gray-700 italic leading-relaxed"
+                    style={{ fontSize: "1.1rem", lineHeight: 1.8 }}
+                  >
                     "{card.scenario}"
                   </p>
                 </div>
@@ -194,7 +206,7 @@ export default function UseCases() {
                   <p
                     className="uppercase mb-3"
                     style={{
-                      color: "#c8972e",
+                      color: "#FFD700",
                       fontWeight: 800,
                       fontSize: "16px",
                       letterSpacing: "0.18em",
@@ -206,11 +218,12 @@ export default function UseCases() {
                     {card.helps.map((item) => (
                       <li
                         key={item}
-                        className="flex items-start gap-2 text-gray-700 text-sm leading-relaxed"
+                        className="flex items-start gap-2 text-gray-700 leading-relaxed"
+                        style={{ fontSize: "1.1rem", lineHeight: 1.8 }}
                       >
                         <span
                           className="mt-0.5 flex-shrink-0 font-bold"
-                          style={{ color: "#0f766e" }}
+                          style={{ color: "#25D366" }}
                         >
                           •
                         </span>
@@ -225,7 +238,7 @@ export default function UseCases() {
                   <p
                     className="uppercase mb-3"
                     style={{
-                      color: "#c8972e",
+                      color: "#FFD700",
                       fontWeight: 800,
                       fontSize: "16px",
                       letterSpacing: "0.18em",
@@ -241,8 +254,12 @@ export default function UseCases() {
                       {card.impact.map((item) => (
                         <li
                           key={item}
-                          className="flex items-start gap-2 text-sm leading-relaxed"
-                          style={{ color: "#1a5c30" }}
+                          className="flex items-start gap-2 leading-relaxed"
+                          style={{
+                            color: "#1a5c30",
+                            fontSize: "1.1rem",
+                            lineHeight: 1.8,
+                          }}
                         >
                           <span className="mt-0.5 flex-shrink-0 font-bold">
                             ✔
@@ -262,11 +279,14 @@ export default function UseCases() {
       {/* SECTION 3: IMPACT FRAMEWORK */}
       <section
         data-ocid="usecases.framework.section"
-        style={{ backgroundColor: "#0f766e" }}
+        style={{ backgroundColor: "#075E54" }}
         className="py-20 px-6"
       >
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-12 text-center">
+          <h2
+            className="font-bold text-white mb-12 text-center"
+            style={{ fontSize: "2.4rem", fontWeight: 800 }}
+          >
             Impact Framework: What EcoGSM Measures
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
@@ -278,12 +298,19 @@ export default function UseCases() {
               >
                 <span className="text-4xl mb-4">{card.icon}</span>
                 <h3
-                  className="text-lg font-bold mb-2"
-                  style={{ color: "#0f766e" }}
+                  className="font-bold mb-2"
+                  style={{
+                    color: "#25D366",
+                    fontSize: "1.4rem",
+                    fontWeight: 700,
+                  }}
                 >
                   {card.title}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p
+                  className="text-gray-600 leading-relaxed"
+                  style={{ fontSize: "1.1rem", lineHeight: 1.8 }}
+                >
                   {card.text}
                 </p>
               </div>

@@ -24,13 +24,16 @@ const contactEmails = [
 
 export function Footer() {
   return (
-    <footer style={{ backgroundColor: "#094f4f" }} className="text-white">
+    <footer style={{ backgroundColor: "#075E54" }} className="text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Column 1 — Brand */}
           <div className="flex flex-col gap-3">
             <span className="text-2xl font-bold tracking-tight">🌍 EcoGSM</span>
-            <p className="text-sm text-white/70 leading-relaxed max-w-xs">
+            <p
+              className="text-white/70 leading-relaxed max-w-xs"
+              style={{ fontSize: "1.1rem", lineHeight: 1.8 }}
+            >
               Social medicine. Digitally enabled. Community owned.
             </p>
           </div>
@@ -46,7 +49,8 @@ export function Footer() {
                   <Link
                     to={link.to}
                     data-ocid="nav.link"
-                    className="text-sm text-white/80 hover:text-white transition-colors"
+                    className="text-white/80 hover:text-white transition-colors"
+                    style={{ fontSize: "1.1rem", lineHeight: 1.8 }}
                   >
                     {link.label}
                   </Link>
@@ -66,7 +70,8 @@ export function Footer() {
                   <Link
                     to={link.to}
                     data-ocid="nav.link"
-                    className="text-sm text-white/80 hover:text-white transition-colors"
+                    className="text-white/80 hover:text-white transition-colors"
+                    style={{ fontSize: "1.1rem", lineHeight: 1.8 }}
                   >
                     {link.label}
                   </Link>
@@ -85,7 +90,8 @@ export function Footer() {
                 <li key={email}>
                   <a
                     href={`mailto:${email}`}
-                    className="text-sm text-white/80 hover:text-white transition-colors break-all"
+                    className="text-white/80 hover:text-white transition-colors break-all"
+                    style={{ fontSize: "1.1rem", lineHeight: 1.8 }}
                   >
                     {email}
                   </a>

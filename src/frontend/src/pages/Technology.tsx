@@ -50,7 +50,7 @@ export default function Technology() {
       {/* SECTION 1: HERO */}
       <section
         data-ocid="tech.hero.section"
-        style={{ backgroundColor: "#094f4f" }}
+        style={{ backgroundColor: "#075E54" }}
         className="py-20 px-6"
       >
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
@@ -59,7 +59,7 @@ export default function Technology() {
             <p
               className="uppercase mb-4"
               style={{
-                color: "#c8972e",
+                color: "#FFD700",
                 fontWeight: 800,
                 fontSize: "16px",
                 letterSpacing: "0.18em",
@@ -67,12 +67,19 @@ export default function Technology() {
             >
               TECHNOLOGY
             </p>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+            <h1
+              className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight"
+              style={{ fontWeight: 800 }}
+            >
               AI, Digital Infrastructure, and Secure Design
             </h1>
             <p
-              className="text-lg leading-relaxed"
-              style={{ color: "rgba(255,255,255,0.85)" }}
+              className="leading-relaxed"
+              style={{
+                color: "rgba(255,255,255,0.85)",
+                fontSize: "1.1rem",
+                lineHeight: 1.8,
+              }}
             >
               EcoGSM is powered by a modern, modular stack combining AI,
               telehealth, digital public infrastructure integration, and secure
@@ -95,11 +102,14 @@ export default function Technology() {
       {/* SECTION 2: AI SECTION */}
       <section
         data-ocid="tech.ai.section"
-        style={{ backgroundColor: "#f0fdf9" }}
+        style={{ backgroundColor: "#f0fdf4" }}
         className="py-20 px-6"
       >
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
+          <h2
+            className="font-bold text-gray-900 mb-12 text-center"
+            style={{ fontSize: "2.4rem", fontWeight: 800 }}
+          >
             Artificial Intelligence That Augments, Not Replaces
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -109,13 +119,17 @@ export default function Technology() {
               style={{
                 backgroundColor: "#ffffff",
                 border: "1px solid #e2e8f0",
-                borderLeft: "3px solid #0f766e",
+                borderLeft: "3px solid #25D366",
                 borderRadius: "12px",
               }}
             >
               <h3
-                className="text-xl font-bold mb-6"
-                style={{ color: "#0f766e" }}
+                className="font-bold mb-6"
+                style={{
+                  color: "#25D366",
+                  fontSize: "1.4rem",
+                  fontWeight: 700,
+                }}
               >
                 AI provides:
               </h3>
@@ -124,11 +138,16 @@ export default function Technology() {
                   <li key={item} className="flex items-start gap-3">
                     <span
                       className="mt-0.5 flex-shrink-0 font-bold text-lg"
-                      style={{ color: "#0f766e" }}
+                      style={{ color: "#25D366" }}
                     >
                       ✔
                     </span>
-                    <span className="text-gray-700 text-base">{item}</span>
+                    <span
+                      className="text-gray-700"
+                      style={{ fontSize: "1.1rem", lineHeight: 1.8 }}
+                    >
+                      {item}
+                    </span>
                   </li>
                 ))}
               </ul>
@@ -140,13 +159,17 @@ export default function Technology() {
               style={{
                 backgroundColor: "#ffffff",
                 border: "1px solid #e2e8f0",
-                borderLeft: "3px solid #0f766e",
+                borderLeft: "3px solid #25D366",
                 borderRadius: "12px",
               }}
             >
               <h3
-                className="text-xl font-bold mb-6"
-                style={{ color: "#0f766e" }}
+                className="font-bold mb-6"
+                style={{
+                  color: "#25D366",
+                  fontSize: "1.4rem",
+                  fontWeight: 700,
+                }}
               >
                 We ensure:
               </h3>
@@ -155,11 +178,16 @@ export default function Technology() {
                   <li key={item} className="flex items-start gap-3">
                     <span
                       className="mt-0.5 flex-shrink-0 font-bold text-lg"
-                      style={{ color: "#0f766e" }}
+                      style={{ color: "#25D366" }}
                     >
                       ✔
                     </span>
-                    <span className="text-gray-700 text-base">{item}</span>
+                    <span
+                      className="text-gray-700"
+                      style={{ fontSize: "1.1rem", lineHeight: 1.8 }}
+                    >
+                      {item}
+                    </span>
                   </li>
                 ))}
               </ul>
@@ -171,11 +199,14 @@ export default function Technology() {
       {/* SECTION 3: CORE TECHNOLOGIES */}
       <section
         data-ocid="tech.core.section"
-        style={{ backgroundColor: "#0f766e" }}
+        style={{ backgroundColor: "#128C7E" }}
         className="py-20 px-6"
       >
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-12 text-center">
+          <h2
+            className="font-bold text-white mb-12 text-center"
+            style={{ fontSize: "2.4rem", fontWeight: 800 }}
+          >
             Core Technologies
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
@@ -186,7 +217,10 @@ export default function Technology() {
                 className="bg-white rounded-2xl p-7 flex flex-col items-center text-center shadow-md"
               >
                 <span className="text-5xl mb-4">{card.icon}</span>
-                <p className="font-semibold text-gray-900 text-base leading-snug">
+                <p
+                  className="font-semibold text-gray-900 leading-snug"
+                  style={{ fontSize: "1.1rem", lineHeight: 1.8 }}
+                >
                   {card.label}
                 </p>
               </div>
@@ -198,11 +232,14 @@ export default function Technology() {
       {/* SECTION 4: ARCHITECTURE PRINCIPLES */}
       <section
         data-ocid="tech.architecture.section"
-        style={{ backgroundColor: "#f0fdf9" }}
+        style={{ backgroundColor: "#f0fdf4" }}
         className="py-20 px-6"
       >
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
+          <h2
+            className="font-bold text-gray-900 mb-12 text-center"
+            style={{ fontSize: "2.4rem", fontWeight: 800 }}
+          >
             Architecture Principles
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -214,20 +251,28 @@ export default function Technology() {
                 style={{
                   backgroundColor: "#ffffff",
                   border: "1px solid #e2e8f0",
-                  borderLeft: "3px solid #0f766e",
+                  borderLeft: "3px solid #25D366",
                   borderRadius: "12px",
                 }}
               >
                 <span
                   className="w-9 h-9 rounded-full flex items-center justify-center font-bold text-white text-sm mb-5 inline-flex"
-                  style={{ backgroundColor: "#0f766e" }}
+                  style={{ backgroundColor: "#25D366" }}
                 >
                   {card.num}
                 </span>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <h3
+                  className="font-bold text-gray-900 mb-3"
+                  style={{ fontSize: "1.4rem", fontWeight: 700 }}
+                >
                   {card.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">{card.text}</p>
+                <p
+                  className="text-gray-600 leading-relaxed"
+                  style={{ fontSize: "1.1rem", lineHeight: 1.8 }}
+                >
+                  {card.text}
+                </p>
               </div>
             ))}
           </div>

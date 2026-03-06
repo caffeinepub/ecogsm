@@ -49,7 +49,7 @@ export default function Solutions() {
 
   /* ── Shared style helpers ───────────────────────────────────── */
   const labelStyle: React.CSSProperties = {
-    color: "#c8972e",
+    color: "#FFD700",
     fontWeight: 800,
     fontSize: "16px",
     letterSpacing: "0.18em",
@@ -57,13 +57,13 @@ export default function Solutions() {
   };
 
   return (
-    <div style={{ backgroundColor: "#f8fafc" }}>
+    <div style={{ backgroundColor: "#f0fdf4" }}>
       {/* ══════════════════════════════════════════════
           SECTION 1: HERO
       ══════════════════════════════════════════════ */}
       <section
         data-ocid="solutions.hero.section"
-        style={{ backgroundColor: "#f0fdf9" }}
+        style={{ backgroundColor: "#128C7E" }}
         className="py-24 px-6"
       >
         <div className="max-w-4xl mx-auto text-center">
@@ -71,14 +71,14 @@ export default function Solutions() {
             OUR SOLUTIONS
           </p>
           <h1
-            className="text-4xl md:text-5xl font-bold mb-6 leading-tight"
-            style={{ color: "#0f172a" }}
+            className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-white"
+            style={{ fontWeight: 800 }}
           >
             Integrated Solutions for Social Medicine
           </h1>
           <p
-            className="text-lg leading-relaxed max-w-3xl mx-auto"
-            style={{ color: "#475569" }}
+            className="leading-relaxed max-w-3xl mx-auto text-white/90"
+            style={{ fontSize: "1.1rem", lineHeight: 1.8 }}
           >
             EcoGSM offers a family of interoperable solutions deployable
             together or in stages. Each is designed for low-resource conditions
@@ -88,11 +88,11 @@ export default function Solutions() {
       </section>
 
       {/* ══════════════════════════════════════════════
-          SECTION 2: MORSHID (dark teal, 2-column)
+          SECTION 2: MORSHID (dark green, 2-column)
       ══════════════════════════════════════════════ */}
       <section
         data-ocid="solutions.morshid.section"
-        style={{ backgroundColor: "#0f766e" }}
+        style={{ backgroundColor: "#128C7E" }}
         className="py-20 px-6"
       >
         <div className="max-w-6xl mx-auto">
@@ -105,13 +105,22 @@ export default function Solutions() {
               >
                 🌾
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-3 leading-tight">
+              <h2
+                className="text-3xl md:text-4xl font-bold text-white mb-3 leading-tight"
+                style={{ fontWeight: 800 }}
+              >
                 Morshid – Smart Agriculture for Food Security
               </h2>
-              <p className="text-white/80 italic text-lg mb-5">
+              <p
+                className="text-white/80 italic mb-5"
+                style={{ fontSize: "1.1rem", lineHeight: 1.8 }}
+              >
                 Food Security through Smart Agriculture
               </p>
-              <p className="text-white/90 text-base leading-relaxed mb-8">
+              <p
+                className="text-white/90 leading-relaxed mb-8"
+                style={{ fontSize: "1.1rem", lineHeight: 1.8 }}
+              >
                 By connecting farmers directly to markets and empowering them
                 with knowledge, Morshid fights food insecurity, ensures fair
                 trade, and builds a sustainable agricultural future for Morocco.
@@ -125,11 +134,16 @@ export default function Solutions() {
                   <li key={item} className="flex items-start gap-3">
                     <span
                       className="mt-1 flex-shrink-0 font-bold"
-                      style={{ color: "#c8972e" }}
+                      style={{ color: "#FFD700" }}
                     >
                       •
                     </span>
-                    <span className="text-white/90">{item}</span>
+                    <span
+                      className="text-white/90"
+                      style={{ fontSize: "1.1rem", lineHeight: 1.8 }}
+                    >
+                      {item}
+                    </span>
                   </li>
                 ))}
               </ul>
@@ -144,8 +158,12 @@ export default function Solutions() {
                 href="https://www.morshid.ma"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block px-7 py-3 rounded-full font-semibold text-sm transition-opacity hover:opacity-90"
-                style={{ backgroundColor: "#c8972e", color: "#0f172a" }}
+                className="inline-block px-7 py-3 rounded-full font-bold text-sm transition-opacity hover:opacity-90"
+                style={{
+                  backgroundColor: "#FFD700",
+                  color: "#1a2e2e",
+                  fontWeight: 700,
+                }}
               >
                 Visit www.morshid.ma
               </a>
@@ -165,11 +183,11 @@ export default function Solutions() {
       </section>
 
       {/* ══════════════════════════════════════════════
-          SECTION 3: VOSPITAL (light teal, 2-column)
+          SECTION 3: VOSPITAL (light green, 2-column)
       ══════════════════════════════════════════════ */}
       <section
         data-ocid="solutions.vospital.section"
-        style={{ backgroundColor: "#f0fdf9" }}
+        style={{ backgroundColor: "#f0fdf4" }}
         className="py-20 px-6"
       >
         <div className="max-w-6xl mx-auto">
@@ -179,16 +197,27 @@ export default function Solutions() {
               <div className="text-6xl mb-4">🏥</div>
               <h2
                 className="text-3xl md:text-4xl font-bold mb-3 leading-tight"
-                style={{ color: "#0f172a" }}
+                style={{ color: "#0f172a", fontWeight: 800 }}
               >
                 Vospital.Care – A Hospital Without Walls
               </h2>
-              <p className="italic text-lg mb-5" style={{ color: "#64748b" }}>
+              <p
+                className="italic mb-5"
+                style={{
+                  color: "#64748b",
+                  fontSize: "1.1rem",
+                  lineHeight: 1.8,
+                }}
+              >
                 Rural Medicine leveraging on urban medical facility
               </p>
               <p
-                className="text-base leading-relaxed mb-8"
-                style={{ color: "#475569" }}
+                className="leading-relaxed mb-8"
+                style={{
+                  color: "#475569",
+                  fontSize: "1.1rem",
+                  lineHeight: 1.8,
+                }}
               >
                 Vospital.Care is a virtual hospital platform that connects
                 doctors and patients remotely through video, AI bots, and
@@ -204,11 +233,19 @@ export default function Solutions() {
                   <li key={item} className="flex items-start gap-3">
                     <span
                       className="mt-1 flex-shrink-0 font-bold"
-                      style={{ color: "#c8972e" }}
+                      style={{ color: "#25D366" }}
                     >
                       •
                     </span>
-                    <span style={{ color: "#374151" }}>{item}</span>
+                    <span
+                      style={{
+                        color: "#374151",
+                        fontSize: "1.1rem",
+                        lineHeight: 1.8,
+                      }}
+                    >
+                      {item}
+                    </span>
                   </li>
                 ))}
               </ul>
@@ -218,8 +255,8 @@ export default function Solutions() {
                 href="https://www.vospital.care"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block px-7 py-3 rounded-full font-semibold text-sm text-white transition-opacity hover:opacity-90"
-                style={{ backgroundColor: "#0f766e" }}
+                className="inline-block px-7 py-3 rounded-full font-bold text-sm text-white transition-opacity hover:opacity-90"
+                style={{ backgroundColor: "#25D366", fontWeight: 700 }}
               >
                 Visit www.vospital.care
               </a>
@@ -239,11 +276,11 @@ export default function Solutions() {
       </section>
 
       {/* ══════════════════════════════════════════════
-          SECTION 4: ETITUDE (dark teal, centered)
+          SECTION 4: ETITUDE (dark green, centered)
       ══════════════════════════════════════════════ */}
       <section
         data-ocid="solutions.etitude.section"
-        style={{ backgroundColor: "#0f766e" }}
+        style={{ backgroundColor: "#075E54" }}
         className="py-20 px-6"
       >
         <div className="max-w-6xl mx-auto">
@@ -251,10 +288,16 @@ export default function Solutions() {
             {/* Left: text */}
             <div className="flex-1">
               <div className="text-6xl mb-4">📚</div>
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-5 leading-tight">
+              <h2
+                className="text-3xl md:text-4xl font-bold text-white mb-5 leading-tight"
+                style={{ fontWeight: 800 }}
+              >
                 Etitude – Social Equity through Education
               </h2>
-              <p className="text-white/90 text-base leading-relaxed mb-8">
+              <p
+                className="text-white/90 leading-relaxed mb-8"
+                style={{ fontSize: "1.1rem", lineHeight: 1.8 }}
+              >
                 TMU proposes ETITUDE as a powerful tool to democratize
                 education. By transforming complex knowledge into accessible
                 learning for everyone, ETITUDE breaks down barriers, bridges
@@ -270,11 +313,16 @@ export default function Solutions() {
                   <li key={item} className="flex items-start gap-3">
                     <span
                       className="mt-1 flex-shrink-0 font-bold"
-                      style={{ color: "#c8972e" }}
+                      style={{ color: "#FFD700" }}
                     >
                       •
                     </span>
-                    <span className="text-white/90">{item}</span>
+                    <span
+                      className="text-white/90"
+                      style={{ fontSize: "1.1rem", lineHeight: 1.8 }}
+                    >
+                      {item}
+                    </span>
                   </li>
                 ))}
               </ul>
@@ -284,8 +332,12 @@ export default function Solutions() {
                 href="https://www.etitude.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block px-7 py-3 rounded-full font-semibold text-sm transition-opacity hover:opacity-90"
-                style={{ backgroundColor: "#c8972e", color: "#0f172a" }}
+                className="inline-block px-7 py-3 rounded-full font-bold text-sm transition-opacity hover:opacity-90"
+                style={{
+                  backgroundColor: "#FFD700",
+                  color: "#1a2e2e",
+                  fontWeight: 700,
+                }}
               >
                 Visit www.etitude.com
               </a>
@@ -305,11 +357,11 @@ export default function Solutions() {
       </section>
 
       {/* ══════════════════════════════════════════════
-          SECTION 5: AIRELLO (light teal, centered)
+          SECTION 5: AIRELLO (light green, centered)
       ══════════════════════════════════════════════ */}
       <section
         data-ocid="solutions.airello.section"
-        style={{ backgroundColor: "#f0fdf9" }}
+        style={{ backgroundColor: "#f0fdf4" }}
         className="py-20 px-6"
       >
         <div className="max-w-6xl mx-auto">
@@ -319,16 +371,27 @@ export default function Solutions() {
               <div className="text-6xl mb-4">🤖</div>
               <h2
                 className="text-3xl md:text-4xl font-bold mb-3 leading-tight"
-                style={{ color: "#0f172a" }}
+                style={{ color: "#0f172a", fontWeight: 800 }}
               >
                 Airello – Multi-AI-Agents Platform
               </h2>
-              <p className="italic text-lg mb-5" style={{ color: "#64748b" }}>
+              <p
+                className="italic mb-5"
+                style={{
+                  color: "#64748b",
+                  fontSize: "1.1rem",
+                  lineHeight: 1.8,
+                }}
+              >
                 AI Agents Working Together
               </p>
               <p
-                className="text-base leading-relaxed mb-8"
-                style={{ color: "#475569" }}
+                className="leading-relaxed mb-8"
+                style={{
+                  color: "#475569",
+                  fontSize: "1.1rem",
+                  lineHeight: 1.8,
+                }}
               >
                 Airello coordinates multiple AI agents for intelligent
                 automation and workflow orchestration, enabling seamless
@@ -343,11 +406,19 @@ export default function Solutions() {
                   <li key={item} className="flex items-start gap-3">
                     <span
                       className="mt-1 flex-shrink-0 font-bold"
-                      style={{ color: "#c8972e" }}
+                      style={{ color: "#25D366" }}
                     >
                       •
                     </span>
-                    <span style={{ color: "#374151" }}>{item}</span>
+                    <span
+                      style={{
+                        color: "#374151",
+                        fontSize: "1.1rem",
+                        lineHeight: 1.8,
+                      }}
+                    >
+                      {item}
+                    </span>
                   </li>
                 ))}
               </ul>
@@ -357,8 +428,8 @@ export default function Solutions() {
                 href="https://www.airello.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block px-7 py-3 rounded-full font-semibold text-sm text-white transition-opacity hover:opacity-90"
-                style={{ backgroundColor: "#0f766e" }}
+                className="inline-block px-7 py-3 rounded-full font-bold text-sm text-white transition-opacity hover:opacity-90"
+                style={{ backgroundColor: "#25D366", fontWeight: 700 }}
               >
                 Visit www.airello.com
               </a>
@@ -378,11 +449,11 @@ export default function Solutions() {
       </section>
 
       {/* ══════════════════════════════════════════════
-          SECTION 6: CHW TOOLS (dark teal, centered)
+          SECTION 6: CHW TOOLS (dark green, centered)
       ══════════════════════════════════════════════ */}
       <section
         data-ocid="solutions.chw.section"
-        style={{ backgroundColor: "#0f766e" }}
+        style={{ backgroundColor: "#128C7E" }}
         className="py-20 px-6"
       >
         <div className="max-w-6xl mx-auto">
@@ -390,10 +461,16 @@ export default function Solutions() {
             {/* Left: text */}
             <div className="flex-1">
               <div className="text-6xl mb-4">🏘️</div>
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-5 leading-tight">
+              <h2
+                className="text-3xl md:text-4xl font-bold text-white mb-5 leading-tight"
+                style={{ fontWeight: 800 }}
+              >
                 Digital Tools for Community Health Workers
               </h2>
-              <p className="text-white/90 text-base leading-relaxed mb-8">
+              <p
+                className="text-white/90 leading-relaxed mb-8"
+                style={{ fontSize: "1.1rem", lineHeight: 1.8 }}
+              >
                 EcoGSM offers a tailored set of tools for community health
                 workers (CHWs) to enhance productivity and strengthen the link
                 between communities and formal health systems.
@@ -404,11 +481,16 @@ export default function Solutions() {
                   <li key={item} className="flex items-start gap-3">
                     <span
                       className="mt-1 flex-shrink-0 font-bold"
-                      style={{ color: "#c8972e" }}
+                      style={{ color: "#FFD700" }}
                     >
                       •
                     </span>
-                    <span className="text-white/90">{item}</span>
+                    <span
+                      className="text-white/90"
+                      style={{ fontSize: "1.1rem", lineHeight: 1.8 }}
+                    >
+                      {item}
+                    </span>
                   </li>
                 ))}
               </ul>
@@ -428,11 +510,11 @@ export default function Solutions() {
       </section>
 
       {/* ══════════════════════════════════════════════
-          SECTION 7: TMU-ENABLEMENT PLATFORM (light teal, centered)
+          SECTION 7: TMU-ENABLEMENT PLATFORM (light green, centered)
       ══════════════════════════════════════════════ */}
       <section
         data-ocid="solutions.tmu_platform.section"
-        style={{ backgroundColor: "#f0fdf9" }}
+        style={{ backgroundColor: "#f0fdf4" }}
         className="py-20 px-6"
       >
         <div className="max-w-6xl mx-auto">
@@ -442,13 +524,17 @@ export default function Solutions() {
               <div className="text-6xl mb-4">⚙️</div>
               <h2
                 className="text-3xl md:text-4xl font-bold mb-5 leading-tight"
-                style={{ color: "#0f172a" }}
+                style={{ color: "#0f172a", fontWeight: 800 }}
               >
                 TMU-Enablement Platform – The Engine Behind EcoGSM
               </h2>
               <p
-                className="text-base leading-relaxed mb-8"
-                style={{ color: "#475569" }}
+                className="leading-relaxed mb-8"
+                style={{
+                  color: "#475569",
+                  fontSize: "1.1rem",
+                  lineHeight: 1.8,
+                }}
               >
                 Underpinning all EcoGSM solutions, the TMU-Enablement Platform
                 provides the shared digital backbone that accelerates deployment
@@ -460,11 +546,19 @@ export default function Solutions() {
                   <li key={item} className="flex items-start gap-3">
                     <span
                       className="mt-1 flex-shrink-0 font-bold"
-                      style={{ color: "#c8972e" }}
+                      style={{ color: "#25D366" }}
                     >
                       •
                     </span>
-                    <span style={{ color: "#374151" }}>{item}</span>
+                    <span
+                      style={{
+                        color: "#374151",
+                        fontSize: "1.1rem",
+                        lineHeight: 1.8,
+                      }}
+                    >
+                      {item}
+                    </span>
                   </li>
                 ))}
               </ul>
