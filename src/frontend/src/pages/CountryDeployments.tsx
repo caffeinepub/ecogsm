@@ -96,8 +96,8 @@ export default function CountryDeployments() {
           </div>
           <div className="flex-1 flex justify-center">
             <img
-              src="/assets/generated/africa-map-countries.dim_600x500.png"
-              alt="Map of Africa highlighting Rwanda, Niger, Morocco, Nigeria, Kenya"
+              src="/assets/generated/country-flags-grid.dim_900x500.jpg"
+              alt="5 country flags: Morocco, Niger, Nigeria, Rwanda, Kenya"
               className="w-full max-w-md rounded-2xl shadow-lg"
             />
           </div>
