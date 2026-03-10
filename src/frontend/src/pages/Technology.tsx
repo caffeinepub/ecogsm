@@ -44,6 +44,35 @@ const architecturePrinciples = [
   },
 ];
 
+const howItWorks = [
+  { num: "1", text: "Patient and Care Giver connect via smartphone camera" },
+  {
+    num: "2",
+    text: "Urban specialist joins remotely through MRESENCE platform",
+  },
+  { num: "3", text: "Specialist views patient through real-time video" },
+  {
+    num: "4",
+    text: "SWISTWIT overlays specialist hand movements onto the live feed",
+  },
+  {
+    num: "5",
+    text: "Care provider receives annotated live guidance on screen",
+  },
+  {
+    num: "6",
+    text: "A portable audio device transmits body sounds to the specialist",
+  },
+];
+
+const whatGetsArchived = [
+  { icon: "🔒", text: "Text chat between Care Giver and specialist" },
+  { icon: "🎙️", text: "Full audio conversation" },
+  { icon: "📹", text: "Complete video and image files" },
+  { icon: "🩺", text: "Audio signal data" },
+  { icon: "📊", text: "All data archived using hashed secure technology" },
+];
+
 export default function Technology() {
   return (
     <div>
@@ -124,7 +153,7 @@ export default function Technology() {
             See What I See. Touch What I Touch.
           </h2>
           <p
-            className="text-gray-700"
+            className="text-gray-700 mb-12"
             style={{ fontSize: "1.1rem", lineHeight: 1.8 }}
           >
             MRESENCE stands for Presence in Mixed Reality. It enables people who
@@ -133,6 +162,94 @@ export default function Technology() {
             rural patient through live video and overlays hand gesture
             annotations onto the feed — guiding the local care provider in real
             time.
+          </p>
+
+          {/* 2-column layout */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+            {/* Left: HOW IT WORKS */}
+            <div
+              className="p-8"
+              style={{
+                backgroundColor: "#ffffff",
+                border: "1px solid #e2e8f0",
+                borderLeft: "3px solid #25D366",
+                borderRadius: "12px",
+              }}
+            >
+              <p
+                className="uppercase mb-6"
+                style={{
+                  color: "#FFD700",
+                  fontWeight: 800,
+                  fontSize: "16px",
+                  letterSpacing: "0.18em",
+                }}
+              >
+                HOW IT WORKS
+              </p>
+              <ol className="space-y-4">
+                {howItWorks.map((step) => (
+                  <li key={step.num} className="flex items-start gap-3">
+                    <span
+                      className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center font-bold text-white text-sm"
+                      style={{ backgroundColor: "#25D366" }}
+                    >
+                      {step.num}
+                    </span>
+                    <span
+                      className="text-gray-700"
+                      style={{ fontSize: "1.05rem", lineHeight: 1.7 }}
+                    >
+                      {step.text}
+                    </span>
+                  </li>
+                ))}
+              </ol>
+            </div>
+
+            {/* Right: WHAT GETS ARCHIVED */}
+            <div
+              className="p-8"
+              style={{
+                backgroundColor: "#ffffff",
+                border: "1px solid #e2e8f0",
+                borderLeft: "3px solid #25D366",
+                borderRadius: "12px",
+              }}
+            >
+              <p
+                className="uppercase mb-6"
+                style={{
+                  color: "#FFD700",
+                  fontWeight: 800,
+                  fontSize: "16px",
+                  letterSpacing: "0.18em",
+                }}
+              >
+                WHAT GETS ARCHIVED
+              </p>
+              <ul className="space-y-4">
+                {whatGetsArchived.map((item) => (
+                  <li key={item.text} className="flex items-start gap-3">
+                    <span className="text-2xl flex-shrink-0">{item.icon}</span>
+                    <span
+                      className="text-gray-700"
+                      style={{ fontSize: "1.05rem", lineHeight: 1.7 }}
+                    >
+                      {item.text}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          {/* Bottom note */}
+          <p
+            className="text-center font-semibold"
+            style={{ color: "#128C7E", fontSize: "1.1rem" }}
+          >
+            Easy to set up. Very convenient. Very affordable.
           </p>
         </div>
       </section>
