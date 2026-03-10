@@ -99,6 +99,44 @@ export default function Technology() {
         </div>
       </section>
 
+      {/* SECTION 1B: MRESENCE + SWISTWIT */}
+      <section
+        data-ocid="tech.mresence.section"
+        style={{ backgroundColor: "#f0fdf4" }}
+        className="py-20 px-6"
+      >
+        <div className="max-w-4xl mx-auto">
+          <p
+            className="uppercase mb-4"
+            style={{
+              color: "#FFD700",
+              fontWeight: 800,
+              fontSize: "16px",
+              letterSpacing: "0.18em",
+            }}
+          >
+            MRESENCE + SWISTWIT
+          </p>
+          <h2
+            className="font-bold text-gray-900 mb-6"
+            style={{ fontSize: "2.4rem", fontWeight: 800 }}
+          >
+            See What I See. Touch What I Touch.
+          </h2>
+          <p
+            className="text-gray-700"
+            style={{ fontSize: "1.1rem", lineHeight: 1.8 }}
+          >
+            MRESENCE stands for Presence in Mixed Reality. It enables people who
+            are geographically separated to communicate as if they were in the
+            same physical space. Using SWISTWIT, an urban specialist views a
+            rural patient through live video and overlays hand gesture
+            annotations onto the feed — guiding the local care provider in real
+            time.
+          </p>
+        </div>
+      </section>
+
       {/* SECTION 2: AI SECTION */}
       <section
         data-ocid="tech.ai.section"
