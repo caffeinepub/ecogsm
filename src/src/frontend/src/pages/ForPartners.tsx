@@ -1,0 +1,260 @@
+export default function ForPartners() {
+  const partnerBadges = [
+    "International and local NGOs",
+    "Faith-based and community organizations",
+    "Telecom operators and ISPs",
+    "Satellite connectivity providers (e.g. Starlink)",
+    "Device manufacturers and distributors",
+    "Pharmaceutical and medical supply chain",
+    "Development agencies and donors",
+    "Impact investors and blended finance platforms",
+  ];
+
+  const whyCards = [
+    {
+      icon: "🚀",
+      title: "Accelerate Impact",
+      text: "Use an existing tested digital backbone. Deploy faster, reach more people, lower risk.",
+    },
+    {
+      icon: "📊",
+      title: "Better Data & Reporting",
+      text: "Real-time dashboards, impact metrics, and transparent accountability to satisfy donors.",
+    },
+    {
+      icon: "♾️",
+      title: "Lasting Impact",
+      text: "Build programs that outlive grants. EcoGSM's financing models create sustainability beyond project cycles.",
+    },
+  ];
+
+  const partnershipModels = [
+    {
+      icon: "🔗",
+      title: "Program Integration",
+      text: "Integrate EcoGSM into your existing service delivery.",
+    },
+    {
+      icon: "🛠️",
+      title: "Co-Design",
+      text: "Co-design modules and interventions for specific health challenges.",
+    },
+    {
+      icon: "💰",
+      title: "Co-Financing",
+      text: "Participate in blended finance and results-based funding models.",
+    },
+    {
+      icon: "🔬",
+      title: "Research & Evaluation",
+      text: "Partner on research, impact evaluation, and innovation.",
+    },
+  ];
+
+  return (
+    <div>
+      {/* SECTION 1: HERO */}
+      <section
+        data-ocid="partners.hero.section"
+        style={{ backgroundColor: "#f0fdf4" }}
+        className="py-20 px-6"
+      >
+        <div className="max-w-5xl mx-auto flex flex-row items-stretch gap-8">
+          {/* Gold accent bar */}
+          <div
+            className="flex-shrink-0 rounded-full hidden sm:block"
+            style={{
+              width: "4px",
+              minHeight: "80px",
+              backgroundColor: "#FFD700",
+              alignSelf: "stretch",
+            }}
+          />
+          {/* Text block */}
+          <div className="flex-1">
+            <p
+              className="uppercase mb-4"
+              style={{
+                color: "#FFD700",
+                fontWeight: 800,
+                fontSize: "16px",
+                letterSpacing: "0.18em",
+              }}
+            >
+              FOR PARTNERS &amp; NGOs
+            </p>
+            <h1
+              className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight"
+              style={{ fontWeight: 800 }}
+            >
+              A Platform for Collaboration and Scaled Impact
+            </h1>
+            <p
+              className="text-gray-700 leading-relaxed max-w-2xl"
+              style={{ fontSize: "1.1rem", lineHeight: 1.8 }}
+            >
+              EcoGSM is built to partner. We provide the digital rails and
+              operational framework that allow your programs to reach more
+              people, more efficiently, with better data and accountability.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 2: WHO WE PARTNER WITH */}
+      <section
+        data-ocid="partners.who.section"
+        style={{ backgroundColor: "#128C7E" }}
+        className="py-20 px-6"
+      >
+        <div className="max-w-5xl mx-auto">
+          <h2
+            className="font-bold text-white mb-10 text-center"
+            style={{ fontSize: "2.4rem", fontWeight: 800 }}
+          >
+            Who Can Partner with EcoGSM?
+          </h2>
+          <div className="flex flex-wrap justify-center gap-3">
+            {partnerBadges.map((badge, i) => (
+              <span
+                key={badge}
+                data-ocid={`partners.who.badge.${i + 1}`}
+                className="px-5 py-2 rounded-full font-semibold text-sm"
+                style={{ backgroundColor: "white", color: "#128C7E" }}
+              >
+                {badge}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 3: WHY PARTNER */}
+      <section
+        data-ocid="partners.why.section"
+        style={{ backgroundColor: "#f0fdf4" }}
+        className="py-20 px-6"
+      >
+        <div className="max-w-6xl mx-auto">
+          <h2
+            className="font-bold text-gray-900 mb-12 text-center"
+            style={{ fontSize: "2.4rem", fontWeight: 800 }}
+          >
+            Why Partner with EcoGSM?
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {whyCards.map((card, i) => (
+              <div
+                key={card.title}
+                data-ocid={`partners.why.card.${i + 1}`}
+                className="p-7"
+                style={{
+                  backgroundColor: "#ffffff",
+                  border: "1px solid #e2e8f0",
+                  borderLeft: "3px solid #25D366",
+                  borderRadius: "12px",
+                }}
+              >
+                <span className="text-5xl mb-5 block">{card.icon}</span>
+                <h3
+                  className="font-bold text-gray-900 mb-3"
+                  style={{ fontSize: "1.4rem", fontWeight: 700 }}
+                >
+                  {card.title}
+                </h3>
+                <p
+                  className="text-gray-600 leading-relaxed"
+                  style={{ fontSize: "1.1rem", lineHeight: 1.8 }}
+                >
+                  {card.text}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 4: PARTNERSHIP MODELS */}
+      <section
+        data-ocid="partners.models.section"
+        style={{ backgroundColor: "#075E54" }}
+        className="py-20 px-6"
+      >
+        <div className="max-w-6xl mx-auto">
+          <h2
+            className="font-bold text-white mb-12 text-center"
+            style={{ fontSize: "2.4rem", fontWeight: 800 }}
+          >
+            Models of Partnership
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {partnershipModels.map((item, i) => (
+              <div
+                key={item.title}
+                data-ocid={`partners.models.item.${i + 1}`}
+                className="flex flex-col items-center text-center gap-4 rounded-2xl p-7"
+                style={{ backgroundColor: "rgba(255,255,255,0.08)" }}
+              >
+                <span className="text-5xl">{item.icon}</span>
+                <h3
+                  className="font-bold text-white"
+                  style={{ fontSize: "1.4rem", fontWeight: 700 }}
+                >
+                  {item.title}
+                </h3>
+                <p
+                  style={{
+                    color: "rgba(255,255,255,0.85)",
+                    fontSize: "1.1rem",
+                    lineHeight: 1.8,
+                  }}
+                  className="leading-relaxed"
+                >
+                  {item.text}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 5: CTA */}
+      <section
+        data-ocid="partners.cta.section"
+        style={{ backgroundColor: "#075E54" }}
+        className="py-20 px-6"
+      >
+        <div className="max-w-3xl mx-auto text-center">
+          <h2
+            className="font-bold text-white mb-10"
+            style={{ fontSize: "2.4rem", fontWeight: 800 }}
+          >
+            Let&apos;s build something that lasts.
+          </h2>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a
+              href="/contact"
+              data-ocid="partners.cta.primary_button"
+              className="px-8 py-4 rounded-full font-bold transition-opacity hover:opacity-90 text-base"
+              style={{
+                backgroundColor: "#FFD700",
+                color: "#1a2e2e",
+                fontWeight: 700,
+              }}
+            >
+              Discuss a Partnership
+            </a>
+            <a
+              href="/contact"
+              data-ocid="partners.cta.secondary_button"
+              className="px-8 py-4 rounded-full font-bold transition-opacity hover:opacity-90 text-base border-2 border-white text-white"
+              style={{ backgroundColor: "transparent", fontWeight: 700 }}
+            >
+              Download Partner Brief (PDF)
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}

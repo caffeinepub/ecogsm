@@ -63,6 +63,21 @@ export default function Solutions() {
     "Monitoring, analytics, and dashboards",
   ];
 
+  const pharmaItems = [
+    {
+      icon: "🔍",
+      text: "Scan any medicine package QR code instantly using a smartphone",
+    },
+    {
+      icon: "🔗",
+      text: "Blockchain records confirm authenticity and full supply chain history",
+    },
+    {
+      icon: "✅",
+      text: "Patients and care providers can trust every medicine they use",
+    },
+  ];
+
   /* ── Shared style helpers ───────────────────────────────────── */
   const labelStyle: React.CSSProperties = {
     color: "#FFD700",
@@ -583,6 +598,50 @@ export default function Solutions() {
                 style={{ maxWidth: "480px" }}
               />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════════
+          SECTION 8: PHARMACEUTICAL PROVENANCE
+      ══════════════════════════════════════════════ */}
+      <section
+        data-ocid="solutions.pharma_provenance.section"
+        style={{ backgroundColor: "#075E54" }}
+        className="py-20 px-6"
+      >
+        <div className="max-w-4xl mx-auto">
+          <p className="mb-4 text-center" style={labelStyle}>
+            PHARMACEUTICAL PROVENANCE
+          </p>
+          <h2
+            className="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight text-center"
+            style={{ fontWeight: 800 }}
+          >
+            Is Your Medicine Real?
+          </h2>
+          <p
+            className="text-white/90 leading-relaxed mb-10 text-center max-w-3xl mx-auto"
+            style={{ fontSize: "1.1rem", lineHeight: 1.8 }}
+          >
+            Counterfeit medicines are a growing threat across Africa and
+            developing regions. EcoGSM uses blockchain technology to verify the
+            authenticity of every medicine at the point of delivery — a simple
+            QR scan confirms the full supply chain history of the product.
+          </p>
+
+          <div className="space-y-5">
+            {pharmaItems.map((item) => (
+              <div key={item.text} className="flex items-start gap-4">
+                <span className="text-2xl flex-shrink-0 mt-1">{item.icon}</span>
+                <span
+                  className="text-white/90"
+                  style={{ fontSize: "1.1rem", lineHeight: 1.8 }}
+                >
+                  {item.text}
+                </span>
+              </div>
+            ))}
           </div>
         </div>
       </section>

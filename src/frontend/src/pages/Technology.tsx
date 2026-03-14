@@ -73,6 +73,55 @@ const whatGetsArchived = [
   { icon: "📊", text: "All data archived using hashed secure technology" },
 ];
 
+const forCareProviders = [
+  "Eliminates time spent on paperwork",
+  "Auto-populates health records through voice",
+  "Understands local languages and dialects",
+  "Works across primary, emergency and social care settings",
+  "Transitions from AI to live provider when needed",
+];
+
+const forInstitutions = [
+  "Directly reduces the shortage of available care providers",
+  "No-Code setup — operational in 30 days",
+  "Connects with existing platforms and systems",
+  "Available in multiple languages 24/7",
+  "Built on TMU Enablement Platform",
+];
+
+const robiCareCards = [
+  {
+    icon: "🎙️",
+    title: "Keyboard Liberation",
+    text: "Speak in any language. Robi understands, responds, and manages tasks on your behalf.",
+  },
+  {
+    icon: "🌍",
+    title: "Multilingual by Design",
+    text: "Supports local languages and dialects — built for the communities EcoGSM serves.",
+  },
+  {
+    icon: "🔗",
+    title: "Fully Integrable",
+    text: "Connects with AI Agent systems, real-time communication platforms, and the TMU Enablement Platform.",
+  },
+];
+
+const dataSovereigntyItems = [
+  {
+    icon: "🔐",
+    text: "Consent and Data Vault — each person controls who can access their records",
+  },
+  {
+    icon: "⏱️",
+    text: "Time-Bound Access — grant access for a specific period, then revoke it automatically",
+  },
+  {
+    icon: "🤝",
+    text: "Constitutional AI — our Custody before Trust framework ensures AI always refers final decisions to the human provider",
+  },
+];
+
 export default function Technology() {
   return (
     <div>
@@ -134,35 +183,47 @@ export default function Technology() {
         style={{ backgroundColor: "#f0fdf4" }}
         className="py-20 px-6"
       >
-        <div className="max-w-4xl mx-auto">
-          <p
-            className="uppercase mb-4"
-            style={{
-              color: "#FFD700",
-              fontWeight: 800,
-              fontSize: "16px",
-              letterSpacing: "0.18em",
-            }}
-          >
-            MRESENCE + SWISTWIT
-          </p>
-          <h2
-            className="font-bold text-gray-900 mb-6"
-            style={{ fontSize: "2.4rem", fontWeight: 800 }}
-          >
-            See What I See. Touch What I Touch.
-          </h2>
-          <p
-            className="text-gray-700 mb-12"
-            style={{ fontSize: "1.1rem", lineHeight: 1.8 }}
-          >
-            MRESENCE stands for Presence in Mixed Reality. It enables people who
-            are geographically separated to communicate as if they were in the
-            same physical space. Using SWISTWIT, an urban specialist views a
-            rural patient through live video and overlays hand gesture
-            annotations onto the feed — guiding the local care provider in real
-            time.
-          </p>
+        <div className="max-w-6xl mx-auto">
+          {/* Two-column intro: text left, image right */}
+          <div className="flex flex-col md:flex-row items-center gap-12 mb-12">
+            <div className="flex-1">
+              <p
+                className="uppercase mb-4"
+                style={{
+                  color: "#FFD700",
+                  fontWeight: 800,
+                  fontSize: "16px",
+                  letterSpacing: "0.18em",
+                }}
+              >
+                MRESENCE + SWISTWIT
+              </p>
+              <h2
+                className="font-bold text-gray-900 mb-6"
+                style={{ fontSize: "2.4rem", fontWeight: 800 }}
+              >
+                See What I See. Touch What I Touch.
+              </h2>
+              <p
+                className="text-gray-700"
+                style={{ fontSize: "1.1rem", lineHeight: 1.8 }}
+              >
+                MRESENCE stands for Presence in Mixed Reality. It enables people
+                who are geographically separated to communicate as if they were
+                in the same physical space. Using SWISTWIT, an urban specialist
+                views a rural patient through live video and overlays hand
+                gesture annotations onto the feed — guiding the local care
+                provider in real time.
+              </p>
+            </div>
+            <div className="flex-1 flex justify-center">
+              <img
+                src="/assets/generated/mresence-telehealth.dim_800x600.jpg"
+                alt="Rural African nurse with specialist visible on smartphone screen with visual overlay"
+                className="rounded-2xl shadow-xl w-full object-cover"
+              />
+            </div>
+          </div>
 
           {/* 2-column layout */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
@@ -251,6 +312,257 @@ export default function Technology() {
           >
             Easy to set up. Very convenient. Very affordable.
           </p>
+        </div>
+      </section>
+
+      {/* SECTION TMU-KL */}
+      <section
+        data-ocid="tech.tmukl.section"
+        style={{ backgroundColor: "#075E54" }}
+        className="py-20 px-6"
+      >
+        <div className="max-w-6xl mx-auto">
+          <div className="flex flex-col md:flex-row items-start gap-12">
+            {/* Left column: label, title, body, two-column grid */}
+            <div className="flex-1">
+              <p
+                className="uppercase mb-4"
+                style={{
+                  color: "#FFD700",
+                  fontWeight: 800,
+                  fontSize: "16px",
+                  letterSpacing: "0.18em",
+                }}
+              >
+                TMU-KL
+              </p>
+              <h2
+                className="font-bold text-white mb-6"
+                style={{ fontSize: "2.4rem", fontWeight: 800 }}
+              >
+                Freeing Providers to Focus on People
+              </h2>
+              <p
+                className="text-white mb-10"
+                style={{ fontSize: "1.1rem", lineHeight: 1.8, opacity: 0.9 }}
+              >
+                TMU-KL is the Keyboard Liberation Service. It uses AI Agents to
+                automate the documentation and coordination work of care
+                providers — so they can focus entirely on the person in front of
+                them instead of a screen.
+              </p>
+
+              {/* Two columns: FOR CARE PROVIDERS + FOR INSTITUTIONS */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {/* Left: FOR CARE PROVIDERS */}
+                <div>
+                  <p
+                    className="uppercase mb-5"
+                    style={{
+                      color: "#FFD700",
+                      fontWeight: 800,
+                      fontSize: "16px",
+                      letterSpacing: "0.18em",
+                    }}
+                  >
+                    FOR CARE PROVIDERS
+                  </p>
+                  <ul className="space-y-4">
+                    {forCareProviders.map((item) => (
+                      <li key={item} className="flex items-start gap-3">
+                        <span
+                          className="mt-0.5 flex-shrink-0 font-bold text-lg"
+                          style={{ color: "#FFD700" }}
+                        >
+                          ✔
+                        </span>
+                        <span
+                          className="text-white"
+                          style={{
+                            fontSize: "1.05rem",
+                            lineHeight: 1.7,
+                            opacity: 0.9,
+                          }}
+                        >
+                          {item}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                {/* Right: FOR INSTITUTIONS */}
+                <div>
+                  <p
+                    className="uppercase mb-5"
+                    style={{
+                      color: "#FFD700",
+                      fontWeight: 800,
+                      fontSize: "16px",
+                      letterSpacing: "0.18em",
+                    }}
+                  >
+                    FOR INSTITUTIONS
+                  </p>
+                  <ul className="space-y-4">
+                    {forInstitutions.map((item) => (
+                      <li key={item} className="flex items-start gap-3">
+                        <span
+                          className="mt-0.5 flex-shrink-0 font-bold text-lg"
+                          style={{ color: "#FFD700" }}
+                        >
+                          ✔
+                        </span>
+                        <span
+                          className="text-white"
+                          style={{
+                            fontSize: "1.05rem",
+                            lineHeight: 1.7,
+                            opacity: 0.9,
+                          }}
+                        >
+                          {item}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Right column: AI image */}
+            <div className="flex-1 flex justify-center items-start">
+              <img
+                src="/assets/generated/tmu-kl-care-provider.dim_800x600.jpg"
+                alt="Care provider speaking naturally to patient while AI interface fills records on screen"
+                className="rounded-2xl shadow-xl w-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION ROBI.CARE */}
+      <section
+        data-ocid="tech.robicare.section"
+        style={{ backgroundColor: "#075E54" }}
+        className="py-20 px-6"
+      >
+        <div className="max-w-4xl mx-auto">
+          <p
+            className="uppercase mb-4"
+            style={{
+              color: "#FFD700",
+              fontWeight: 800,
+              fontSize: "16px",
+              letterSpacing: "0.18em",
+            }}
+          >
+            ROBI.CARE
+          </p>
+          <h2
+            className="font-bold text-white mb-6"
+            style={{ fontSize: "2.4rem", fontWeight: 800 }}
+          >
+            Robi – Your AI Agent, Always Ready
+          </h2>
+          <p
+            className="text-white mb-10"
+            style={{ fontSize: "1.1rem", lineHeight: 1.8, opacity: 0.9 }}
+          >
+            Robi.Care is a speech-enabled multilingual AI Agent. You simply
+            speak to it in any language and it responds, guides, and acts on
+            your behalf — no typing, no barriers, no technical knowledge
+            required.
+          </p>
+
+          {/* 3 cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            {robiCareCards.map((card) => (
+              <div
+                key={card.title}
+                className="p-7"
+                style={{
+                  backgroundColor: "#ffffff",
+                  borderRadius: "12px",
+                  borderTop: "3px solid #25D366",
+                }}
+              >
+                <div className="text-4xl mb-4">{card.icon}</div>
+                <h3
+                  className="mb-3"
+                  style={{
+                    color: "#1a2e2e",
+                    fontSize: "1.4rem",
+                    fontWeight: 700,
+                  }}
+                >
+                  {card.title}
+                </h3>
+                <p
+                  className="text-gray-600"
+                  style={{ fontSize: "1.05rem", lineHeight: 1.7 }}
+                >
+                  {card.text}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* Divider */}
+          <hr
+            style={{
+              borderColor: "rgba(255,255,255,0.2)",
+              borderTopWidth: "1px",
+              marginBottom: "2.5rem",
+            }}
+          />
+
+          {/* DATA SOVEREIGNTY */}
+          <div data-ocid="tech.datasovereignty.section">
+            <p
+              className="uppercase mb-4"
+              style={{
+                color: "#FFD700",
+                fontWeight: 800,
+                fontSize: "16px",
+                letterSpacing: "0.18em",
+              }}
+            >
+              DATA SOVEREIGNTY
+            </p>
+            <h2
+              className="font-bold text-white mb-6"
+              style={{ fontSize: "2.4rem", fontWeight: 800 }}
+            >
+              You Own Your Data
+            </h2>
+            <p
+              className="text-white mb-10"
+              style={{ fontSize: "1.1rem", lineHeight: 1.8, opacity: 0.9 }}
+            >
+              EcoGSM is built on Web3 infrastructure — a decentralized
+              technology that gives individuals true ownership over their
+              personal records. No third party can access your data without your
+              explicit permission.
+            </p>
+            <ul className="space-y-5">
+              {dataSovereigntyItems.map((item) => (
+                <li key={item.text} className="flex items-start gap-4">
+                  <span className="text-2xl flex-shrink-0">{item.icon}</span>
+                  <span
+                    className="text-white"
+                    style={{
+                      fontSize: "1.05rem",
+                      lineHeight: 1.7,
+                      opacity: 0.9,
+                    }}
+                  >
+                    {item.text}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
 
